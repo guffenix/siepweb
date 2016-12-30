@@ -10,6 +10,7 @@ $(document).ready(function() {
          var dato1 = $('#numberCUP').val();
          var dato2 = $('#implementingEntity').val();
          var dato3 = $('#executingUnits').val();
+         alert("dato0: "+dato0);
          $.ajax({
                type:'post',
                url:'save/1_save.jsp',

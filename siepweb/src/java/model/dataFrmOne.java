@@ -5,6 +5,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Locale;
+import javafx.scene.control.Alert;
 
 /**
  *
@@ -27,8 +29,8 @@ public class dataFrmOne {
     //<connection>
     private String classfor = "oracle.jdbc.driver.OracleDriver";
     private String urlOrcl = "jdbc:oracle:thin:@localhost:1521:XE";
-    private String userOrcl = "utic";
-    private String passwordOrcl = "123456";
+    private String userOrcl = "poa";
+    private String passwordOrcl = "espe";
    
     private Connection con = null;
     private PreparedStatement pr = null;
@@ -48,6 +50,8 @@ public class dataFrmOne {
         
         try {
             Class.forName(classfor);
+            //Especifica el idioma y region, si da conflicto comentar.
+            Locale.setDefault(new Locale("es","ES"));
             con = DriverManager.getConnection(urlOrcl, userOrcl, passwordOrcl);
             
             pr = con.prepareStatement(sql);
@@ -63,6 +67,7 @@ public class dataFrmOne {
             
             pr.executeUpdate();
         } catch (Exception e) {
+            
         }
         
     }
