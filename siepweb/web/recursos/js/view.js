@@ -6,15 +6,15 @@ $(document).ready(function() {
 
      $("#save1").click(function(){
          $("#result").html("Nuevo item");
-         var dato0 = $('#nameProject').val();
-         var dato1 = $('#numberCUP').val();
-         var dato2 = $('#implementingEntity').val();
-         var dato3 = $('#executingUnits').val();
-         alert("dato0: "+dato0);
+         var nameProject = $('#nameProject').val();
+         var numberCUP = $('#numberCUP').val();
+         var executingEntity = $('#implementingEntity').val();
+         var executingUnit = $('#executingUnits').val();
+         var coverage = $('#').val();
          $.ajax({
                type:'post',
-               url:'save/1_save.jsp',
-               data:"dato0="+dato0+"&dato1="+dato1+"&dato2="+dato2+"&dato3="+dato3,
+               url:'save/1_saveFormDatGen.jsp',
+               data:"nameProject="+nameProject+"&numberCUP="+numberCUP+"&executingEntity="+executingEntity+"&executingUnit="+executingUnit,
                success:function(respuesta)
                {
                    $("#result").html(respuesta);
@@ -24,7 +24,7 @@ $(document).ready(function() {
     
     $("#section0").load('forms/0_form.html');
     $("#section1").load('forms/1_form.jsp');
-    $("#section2").load('forms/2_form.html');
+    $("#section2").load('forms/2_form.jsp');
     $("#section3").load('forms/3_form.html');
     $("#section4").load('forms/4_form.html');
     $("#section5").load('forms/5_form.html');

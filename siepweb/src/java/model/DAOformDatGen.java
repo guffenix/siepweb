@@ -17,17 +17,20 @@ public class DAOformDatGen {
     PreparedStatement pst = null;
     public boolean addFormDatGen(formDatGen objFormDatGen)
     {
-        objConn = new conexion();
-        boolean flag = false;
         
+        boolean flag = false;
+        String sql = "INSERT INTO UTIC_UZFTDATGEN (UZFTDATGEN_NOMBRE, PK_UZFTDATGEN_CUP,"
+                + "UZFTDATGEN_ENTIDAD_EJEC, UZFTDATGEN_UNID_EJECUT"
+                //+ ", UZFTDATGEN_COBERTURA,UZFTDATGEN_ZONA_PLANIF,UZFTDATGEN_PROVINCIA,UZFTDATGEN_CANTON,UZFTDATGEN_PARROQUIA"
+                + ") VALUES(?,?,?,?)";//,?,?,?,?,?)";
         try {
-            //"INSERT INTO utic_uzftdatgen(PK_UZFTDATGEN_CUP,UZFTDATGEN_NOMBRE,UZFTDATGEN_ENTIDAD_EJEC,UZFTDATGEN_UNID_EJECUT) VALUES ('22','".$nameProj."','espe','ufa')"
-            String sql = "INSERT INTO utic_uzftdatgen(PK_UZFTDATGEN_CUP,UZFTDATGEN_NOMBRE) VALUES (?,?)";
+            
+            objConn = new conexion();
             pst = objConn.getConexion().prepareStatement(sql);
-            pst.setString(1, objFormDatGen.getCUP());
-            pst.setString(2, objFormDatGen.getNameProject());
-            //pst.setString(3, objCampeon.getFecha_fin_campeon());
-            //pst.setString(4, objCampeon.getPais_campeon());
+            pst.setString(1, objFormDatGen.getNameProject());
+            pst.setString(2, objFormDatGen.getCUP());
+            pst.setString(3, objFormDatGen.getExecutingEntity());
+            pst.setString(4, objFormDatGen.getExecutingUnit());
             
             if(pst.executeUpdate() == 1)
             {

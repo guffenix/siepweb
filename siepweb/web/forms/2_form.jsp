@@ -1,23 +1,23 @@
-  <p><span class="glyphicon glyphicon-list-alt"></span>
- <b>DIAGN脫STICO Y PROBLEMA</b></p>
+ <p><span class="glyphicon glyphicon-list-alt"></span>
+ <b>DIAGN覵TICO Y PROBLEMA</b></p>
  <form>
   <div class="form-group" id="namePro">
-    <label for="n1">2.1. Descripci贸n de la situaci贸n actual del 谩rea de intervenci贸n del proyecto:
+    <label for="n1">2.1. Descripci髇 de la situaci髇 actual del 醨ea de intervenci髇 del proyecto:
  
 <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda1"></span> 
 <div id="ayuda1" class="alert alert-success collapse">
-<strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
 </div>
     </label>
     <textarea type="text" class="form-control" id="n1">
     </textarea>
   </div>
   <div class="form-group" id="namePro">
-    <label for="n2">2.2. Identificaci贸n, descripci贸n y diagn贸stico del problema:
+    <label for="n2">2.2. Identificaci髇, descripci髇 y diagn髎tico del problema:
 
     <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda2"></span> 
 <div id="ayuda2" class="alert alert-success collapse">
-<strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+<strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
 </div>
     </label>
     <textarea type="text" class="form-control" id="n2">
@@ -29,10 +29,10 @@
 
   </div>
   <div class="form-group" id="namePro">
-    <label for="n3">2.3. L铆nea Base del Proyecto:
+    <label for="n3">2.3. L韓ea Base del Proyecto:
     <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda3"></span> 
     <div id="ayuda3" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
     </label>
     <input type="number" placeholder="valor numerico" min="0" class="form-control">
@@ -40,14 +40,14 @@
     </textarea>
   </div>
 
-  <p><b>2.4. An谩lisis de Oferta y Demanda:</b></p>
+  <p><b>2.4. An醠isis de Oferta y Demanda:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group" id="namePro">
 	    <label for="aod-demand">Demanda:
       <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda4"></span> 
     <div id="ayuda4" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
       </label>
       <input type="number" placeholder="valor numerico" min="0" class="form-control">
@@ -55,10 +55,10 @@
 	    </textarea>
 	  </div>
 	    <div class="form-group" id="namePro">
-	    <label for="aod-ref">Poblaci贸n de referencia:
+	    <label for="aod-ref">Poblaci髇 de referencia:
       <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda5"></span> 
     <div id="ayuda5" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
       </label>
       <input type="number" placeholder="valor numerico" min="0" class="form-control">
@@ -67,10 +67,10 @@
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="aod-dmdpot">Poblaci贸n demandante potencial:
+	    <label for="aod-dmdpot">Poblaci髇 demandante potencial:
       <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda6"></span> 
     <div id="ayuda6" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
       </label>
       <input type="number" placeholder="valor numerico" min="0" class="form-control">
@@ -79,10 +79,10 @@
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="aod-dmdef">Poblaci贸n demandante efectiva:
+	    <label for="aod-dmdef">Poblaci髇 demandante efectiva:
       <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda7"></span> 
     <div id="ayuda7" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
       </label>
       <input type="number" placeholder="valor numerico" min="0" class="form-control">
@@ -94,7 +94,7 @@
 	    <label for="aod-oferta">Oferta:
       <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda8"></span> 
     <div id="ayuda8" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
       </label>
       <input type="number" placeholder="valor numerico" min="0" class="form-control">
@@ -106,10 +106,10 @@
    </div>
 
   <div class="form-group" id="namePro">
-    <label for="n4">2.5. Identificaci贸n y Caracterizaci贸n de la poblaci贸n objetivo (Beneficiarios):
+    <label for="n4">2.5. Identificaci髇 y Caracterizaci髇 de la poblaci髇 objetivo (Beneficiarios):
     <span class="glyphicon glyphicon-question-sign greenColor" data-toggle="collapse" data-target="#ayuda9"></span> 
     <div id="ayuda9" class="alert alert-success collapse">
-    <strong>Ayuda: </strong>En esta secci贸n debe realizar bla bla bla...
+    <strong>Ayuda: </strong>En esta secci髇 debe realizar bla bla bla...
     </div>
     </label>
     <input type="number" placeholder="valor numerico" min="0" class="form-control">

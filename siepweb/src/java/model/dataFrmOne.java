@@ -29,7 +29,7 @@ public class dataFrmOne {
     //<connection>
     private String classfor = "oracle.jdbc.driver.OracleDriver";
     private String urlOrcl = "jdbc:oracle:thin:@localhost:1521:XE";
-    private String userOrcl = "poa";
+    private String userOrcl = "poa";//byron: poa espe
     private String passwordOrcl = "espe";
    
     private Connection con = null;
