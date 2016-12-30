@@ -26,7 +26,7 @@ public class dataFrmOne {
     
     //<connection>
     private String classfor = "oracle.jdbc.driver.OracleDriver";
-    private String urlOrcl = "jdbc:oracle:thin:@//localhost:1521:xe";
+    private String urlOrcl = "jdbc:oracle:thin:@localhost:1521:XE";
     private String userOrcl = "utic";
     private String passwordOrcl = "123456";
    
