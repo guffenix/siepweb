@@ -36,6 +36,8 @@ public class DAOformDatGen {
             {
                 flag = true;
             }
+            pst.close();
+            objConn.getConexion().close();
             
         } catch (Exception e) {
         }finally{
