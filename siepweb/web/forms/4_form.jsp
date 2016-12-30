@@ -1,11 +1,11 @@
   <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>VIABILIDAD Y PLAN DE SOSTENIBILIDAD </b></p>
  <form>
-  <p><b>4.1. Viabilidad t茅cnica:</b></p>
+  <p><b>4.1. Viabilidad t閏nica:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group" id="namePro">
-	    <label for="aod-demand">Contrataci贸n del personal:</label>
+	    <label for="aod-demand">Contrataci髇 del personal:</label>
 	    <textarea type="text" class="form-control" id="aod-demand">
 	    </textarea>
 	  </div>
@@ -16,13 +16,13 @@
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="aod-dmdpot">Acreditaci贸n estrat茅gica dirigida a los sectores de las cadenas productivas priorizadas:</label>
+	    <label for="aod-dmdpot">Acreditaci髇 estrat間ica dirigida a los sectores de las cadenas productivas priorizadas:</label>
 	    <textarea type="text" class="form-control" id="aod-dmdpot">
 	    </textarea>
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="aod-dmdpot">Apoyar en la vigilancia de Mercado y Servicios P煤blicos:</label>
+	    <label for="aod-dmdpot">Apoyar en la vigilancia de Mercado y Servicios P鷅licos:</label>
 	    <textarea type="text" class="form-control" id="aod-dmdpot">
 	    </textarea>
 	  </div>
@@ -31,28 +31,28 @@
     </div>
    </div>
 
-  <p><b>4.2. Viabilidad Financiera y/o Econ贸mica:</b></p>
+  <p><b>4.2. Viabilidad Financiera y/o Econ髆ica:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group" id="namePro">
-	    <label for="aod-demand">Metodolog铆as utilizadas para el c谩lculo de la inversi贸n total, costos de operaci贸n y mantenimiento, ingresos y beneficios:</label>
+	    <label for="aod-demand">Metodolog韆s utilizadas para el c醠culo de la inversi髇 total, costos de operaci髇 y mantenimiento, ingresos y beneficios:</label>
 	    <textarea type="text" class="form-control" id="aod-demand">
 	    </textarea>
 	  </div>
 	    <div class="form-group" id="namePro">
-	    <label for="aod-ref">Identificaci贸n y valoraci贸n de la inversi贸n total, costos de operaci贸n y mantenimiento, ingresos y beneficios:</label>
+	    <label for="aod-ref">Identificaci髇 y valoraci髇 de la inversi髇 total, costos de operaci髇 y mantenimiento, ingresos y beneficios:</label>
 	    <textarea type="text" class="form-control" id="aod-ref">
 	    </textarea>
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="aod-dmdpot">Informe de justificaci贸n:</label>
+	    <label for="aod-dmdpot">Informe de justificaci髇:</label>
 	    <textarea type="text" class="form-control" id="aod-dmdpot">
 	    </textarea>
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="aod-dmdpot">Indicadores financieros y/o econ贸micos:</label>
+	    <label for="aod-dmdpot">Indicadores financieros y/o econ髆icos:</label>
 	    <textarea type="text" class="form-control" id="aod-dmdpot">
 	    </textarea>
 	  </div>
@@ -61,11 +61,11 @@
     </div>
    </div>
 
-   <p><b>4.3. An谩lisis de sostenibilidad:</b></p>
+   <p><b>4.3. An醠isis de sostenibilidad:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group" id="namePro">
-	    <label for="aod-demand">An谩lisis de impacto ambiental y de riesgos:</label>
+	    <label for="aod-demand">An醠isis de impacto ambiental y de riesgos:</label>
 	    <textarea type="text" class="form-control" id="aod-demand">
 	    </textarea>
 	  </div>

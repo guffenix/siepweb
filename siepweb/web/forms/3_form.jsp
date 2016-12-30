@@ -1,7 +1,7 @@
  <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>OBJETIVOS DEL PROYECTO</b></p>
  <form>
- <p><b>3.1. Objetivo general y objetivos espec铆ficos:</b></p>
+ <p><b>3.1. Objetivo general y objetivos espec韋icos:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group" id="namePro">
@@ -10,7 +10,7 @@
 	    <input type="text" class="form-control" id="aod-demand">
 	  </div>
 
-	  <p><b>Objetivos Espec铆ficos:</b></p>
+	  <p><b>Objetivos Espec韋icos:</b></p>
 	  <div class="input-group">
 	  	<input type="text" class="form-control" aria-label="...">
 		  <div class="input-group-btn">
@@ -25,7 +25,7 @@
 
 
 	  <div class="form-group" id="namePro">
-<p><br><b>Alineaci贸n  del proyecto con los  objetivos al PNBV 2013-2017:</b></p>
+<p><br><b>Alineaci髇  del proyecto con los  objetivos al PNBV 2013-2017:</b></p>
 
     <div class="input-group">
       <span class="input-group-addon">
@@ -73,7 +73,7 @@
    <table class="table table-striped">
 	  <tr>
 	    <th>Indicador</th>
-	    <th>F贸rmula</th>
+	    <th>F髍mula</th>
 	    <th>Meta</th>
 	  </tr>
 
@@ -84,15 +84,15 @@
 	  </tr>
 
 	</table>
-	<p>Descripci贸n adicional de ayuda.</p>
+	<p>Descripci髇 adicional de ayuda.</p>
 	<br>
 
-	 <p><b>3.3. Matriz de Marco L贸gico:</b></p>
+	 <p><b>3.3. Matriz de Marco L骻ico:</b></p>
 	 <table class="table table-striped">
 	  <tr>
 	    <th>Resumen Narrativo de Objetivos</th>
 	    <th>Indicadores Verificables Objetivamente</th>
-	    <th>Medios de Verificaci贸n</th>
+	    <th>Medios de Verificaci髇</th>
 	    <th>Supuestos</th>
 	  </tr>
 	  <tr>
@@ -102,7 +102,7 @@
 	    <td>
 	    <input type="text" class="form-control">
   <input type="radio" name="meta" value="prct"> (% Porcentaje) 
-    <input type="radio" name="meta" value="num"> (# Num茅rico) 
+    <input type="radio" name="meta" value="num"> (# Num閞ico) 
 	    </td>
 	  </tr>
 
@@ -113,7 +113,7 @@
 	  <tr>
 	    <th>Resumen Narrativo de Objetivos</th>
 	    <th>Costo</th>
-	    <th>Medios de Verificaci贸n</th>
+	    <th>Medios de Verificaci髇</th>
 	    <th>Supuestos</th>
 	  </tr>
 	  <tr>

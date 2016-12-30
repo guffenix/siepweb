@@ -25,11 +25,11 @@ $(document).ready(function() {
     $("#section0").load('forms/0_form.html');
     $("#section1").load('forms/1_form.jsp');
     $("#section2").load('forms/2_form.jsp');
-    $("#section3").load('forms/3_form.html');
-    $("#section4").load('forms/4_form.html');
-    $("#section5").load('forms/5_form.html');
-    $("#section6").load('forms/6_form.html');
-    $("#section7").load('forms/7_form.html');
+    $("#section3").load('forms/3_form.jsp');
+    $("#section4").load('forms/4_form.jsp');
+    $("#section5").load('forms/5_form.jsp');
+    $("#section6").load('forms/6_form.jsp');
+    $("#section7").load('forms/7_form.jsp');
 
     var numberNotify = 0;
     

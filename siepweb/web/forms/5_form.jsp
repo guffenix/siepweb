@@ -6,7 +6,7 @@
 <table class="table table-striped">
   <tr>
     <th rowspan="3">Componentes/Rubros</th>
-    <th colspan="3">FUENTES DE FINANCIAMIENTO (d贸lares)</th>
+    <th colspan="3">FUENTES DE FINANCIAMIENTO (d髄ares)</th>
     <th rowspan="3">Total</th>
   </tr>
   <tr>
@@ -14,14 +14,14 @@
     <td colspan="2">Internas</td>
   </tr>
   <tr>
-    <td>Cooperaci贸n</td>
+    <td>Cooperaci髇</td>
     <td>Fiscales</td>
-    <td>Autogesti贸n</td>
+    <td>Autogesti髇</td>
     
   </tr>
   <tr>
     <td>
-    <input type="text" class="form-control" value="Descripci贸n"></td>
+    <input type="text" class="form-control" value="Descripci髇"></td>
     <td><input type="text" class="form-control"></td>
     <td><input type="text" class="form-control"></td>
     <td><input type="text" class="form-control"></td>

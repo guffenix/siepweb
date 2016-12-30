@@ -1,16 +1,16 @@
   <p><span class="glyphicon glyphicon-list-alt"></span>
- <b>ESTRATEGIA DE SEGUIMIENTO Y EVALUACIÃ“N </b></p>
+ <b>ESTRATEGIA DE SEGUIMIENTO Y EVALUACIÓN </b></p>
  <form>
   <div class="form-group" id="namePro">
-    <label for="nameProject">7.1. Monitoreo de la EjecuciÃ³n:</label>
+    <label for="nameProject">7.1. Monitoreo de la Ejecución:</label>
     <input type="text" class="form-control" id="nameProject">
   </div>
 
 <p><b>Desarrollar un sistema de alertas:</b></p>
 <table class="table table-striped">
   <tr>
-    <th>Punto CrÃ­tico de Control</th>
-    <th>DescripciÃ³n</th>
+    <th>Punto Crítico de Control</th>
+    <th>Descripción</th>
     <th>Estrategia de Seguimiento</th>
   </tr>
   <tr>
@@ -20,11 +20,11 @@
   </tr>
 </table>
 
-<p><b>AcreditaciÃ³n estratÃ©gica dirigida a los sectores de las cadenas productivas priorizadas:</b></p>
+<p><b>Acreditación estratégica dirigida a los sectores de las cadenas productivas priorizadas:</b></p>
 <table class="table table-striped">
   <tr>
-    <th>Punto CrÃ­tico de Control</th>
-    <th>DescripciÃ³n</th>
+    <th>Punto Crítico de Control</th>
+    <th>Descripción</th>
     <th>Estrategia de Seguimiento</th>
   </tr>
   <tr>
@@ -34,11 +34,11 @@
   </tr>
 </table>
 
-<p><b>Vigilancia de Mercados y Servicios PÃºblicos:</b></p>
+<p><b>Vigilancia de Mercados y Servicios Públicos:</b></p>
 <table class="table table-striped">
   <tr>
-    <th>Punto CrÃ­tico de Control</th>
-    <th>DescripciÃ³n</th>
+    <th>Punto Crítico de Control</th>
+    <th>Descripción</th>
     <th>Estrategia de Seguimiento</th>
   </tr>
   <tr>
@@ -49,7 +49,7 @@
 </table>
 
 <div class="alert alert-success">
-  <strong>InformaciÃ³n:</strong> Para el proceso de monitoreo de ejecuciÃ³n de las actividades programadas se utilizarÃ¡ la siguiente matriz.
+  <strong>Información:</strong> Para el proceso de monitoreo de ejecución de las actividades programadas se utilizará la siguiente matriz.
 </div>
 
 <p><b>Proyecto:</b></p>
@@ -77,7 +77,7 @@
     </label>
 
 	<div class="form-group" id="namePro">
-	    <label for="aod-ref">7.2. EvaluaciÃ³n de Impactos y Resultados:</label>
+	    <label for="aod-ref">7.2. Evaluación de Impactos y Resultados:</label>
 	    <textarea type="text" class="form-control" id="aod-ref">
 	    </textarea>
     <label class="btn btn-default btn-file">
@@ -86,7 +86,7 @@
 	</div>
 
 	<div class="form-group" id="namePro">
-	    <label for="aod-ref">7.3. ActualizaciÃ³n de la lÃ­nea base:</label>
+	    <label for="aod-ref">7.3. Actualización de la línea base:</label>
 	    <textarea type="text" class="form-control" id="aod-ref">
 	    </textarea>
 	</div>
@@ -99,13 +99,13 @@
 	    </textarea>
 	  </div>
 	  <div class="form-group" id="namePro">
-	    <label for="aod-ref">AcreditaciÃ³n estratÃ©gica dirigida a los sectores de las cadenas productivas priorizadas:</label>
+	    <label for="aod-ref">Acreditación estratégica dirigida a los sectores de las cadenas productivas priorizadas:</label>
 	    <textarea type="text" class="form-control" id="aod-ref">
 	    </textarea>
 	  </div>
 
 	  <div class="form-group" id="namePro">
-	    <label for="nameProject">Apoyar la vigilancia de Mercado y Servicios PÃºblicos:</label>
+	    <label for="nameProject">Apoyar la vigilancia de Mercado y Servicios Públicos:</label>
 	    <input type="text" class="form-control" id="nameProject">
 	  </div>
 

@@ -21,7 +21,7 @@
   </div>
 
 
-     <p><b>6.2.1. Modelo de GestiÃ³n:</b></p>
+     <p><b>6.2.1. Modelo de Gestión:</b></p>
      <button type="button" class="btn btn-success greenDarkColor">
      Descargar Formato PDF
      </button>
@@ -31,7 +31,7 @@
 
 
 <p></p>
-<p><b>6.3. Acuerdos institucionales y modalidad de ejecuciÃ³n:</b></p>
+<p><b>6.3. Acuerdos institucionales y modalidad de ejecución:</b></p>
  <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group" id="namePro">
@@ -56,12 +56,12 @@
     </div>
    </div>
 
-     <p><b>6.4. Cronograma valorado por componentes y actividades (Por aÃ±os):</b></p>
+     <p><b>6.4. Cronograma valorado por componentes y actividades (Por años):</b></p>
 <div class="tableScroll">
 <table class="table table-striped widthTable">
   <tr>
     <th rowspan="2">Componente/Actividad</th>
-    <th rowspan="2">CooperaciÃ³n</th>
+    <th rowspan="2">Cooperación</th>
     <th rowspan="2">Fiscales</th>
     <th rowspan="2">Comunidad</th>
     <th colspan="12">2017<br></th>
