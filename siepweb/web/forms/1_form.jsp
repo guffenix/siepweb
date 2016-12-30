@@ -1,7 +1,7 @@
-<% out.print("Formulario 1: desde jsp"); %> 
+
 <script type="text/javascript" src="../recursos/js/view.js"></script>
 <p><span class="glyphicon glyphicon-list-alt"></span>
- <b>DATOS GENERALES DEL PROYECTO</b></p>
+ <b><% out.print("DATOS GENERALES DEL PROYECTO"); %> </b></p>
 <form id="objFrm1" method="post">
   <div class="form-group" id="namePro">
     <label for="nameProject">1.1. Nombre del Proyecto:</label>
