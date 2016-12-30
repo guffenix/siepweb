@@ -1,15 +1,17 @@
- <p><span class="glyphicon glyphicon-list-alt"></span>
+<% out.print("Formulario 1: desde jsp"); %> 
+<script type="text/javascript" src="../recursos/js/view.js"></script>
+<p><span class="glyphicon glyphicon-list-alt"></span>
  <b>DATOS GENERALES DEL PROYECTO</b></p>
- <form>
+<form id="objFrm1" method="post">
   <div class="form-group" id="namePro">
     <label for="nameProject">1.1. Nombre del Proyecto:</label>
-    <input type="text" class="form-control" id="nameProject">
+    <input id="nameProject" name="frm1" type="text" class="form-control"  >
   </div>
   <div class="form-group">
   <p><b>1.2. CUP:</b></p>
 
 <div class="input-group">
-  <input type="text" class="form-control" placeholder="C贸digo 脷nico de Proyecto (Senplades)" aria-describedby="basic-addon2">
+    <input id="numberCUP" name="frm1" type="text" class="form-control"  placeholder="C骴igo 趎ico de Proyecto (Senplades)" aria-describedby="basic-addon2">
   <span class="input-group-addon" id="basic-addon2">ejemplo: 123456789.1234.123456</span>
 </div>
   </div>
@@ -17,27 +19,27 @@
  
 
       <label for="implementingEntity">1.3. Entidad Ejecutora:</label>
-    <select class="form-control" id="implementingEntity">
-      <option value="ufa">Universidad de la Fuerzas Armadas ESPE</option>
-      <option value="ufa">IASA</option>
-      <option value="ufa">Sto. Domingo</option>
+    <select id="implementingEntity" name="frm1" class="form-control" >
+      <option value="Universidad de la Fuerzas Armadas ESPE">Universidad de la Fuerzas Armadas ESPE</option>
+      <option value="IASA">IASA</option>
+      <option value="Sto. Domingo">Sto. Domingo</option>
     </select>
 
   </div>
 
   <div class="form-group">
     <label for="executingUnits">1.3.1. Unidades Ejecutoras:</label>
-    <select class="form-control" id="executingUnits">
-      <option value="dl">Direcci贸n de Laboratorios</option>
-      <option value="dc">Direcci贸n de Certificaci贸n</option>
-      <option value="di">Direcci贸n de Inspecci贸n</option>
-      <option value="dgc">Direcci贸n de Gesti贸n de  Calidad</option>
+    <select id="executingUnits" name="frm1" class="form-control" >
+      <option value="Direcci髇 de Laboratorios">Direcci髇 de Laboratorios</option>
+      <option value="Direcci髇 de Certificaci髇">Direcci髇 de Certificaci髇</option>
+      <option value="Direcci髇 de Inspecci髇">Direcci髇 de Inspecci髇</option>
+      <option value="Direcci髇 de Gesti髇 de  Calidad">Direcci髇 de Gesti髇 de  Calidad</option>
     </select>
   </div>
 
 <hr>
 
-  <p><b>1.4. Cobertura y Localizaci贸n:</b></p>
+  <p><b>1.4. Cobertura y Localizaci髇:</b></p>
   <p><b>- Cobertura</b></p>
   <div class="panel panel-default text-center">
     <div class="panel-body">
@@ -48,7 +50,7 @@
   <div class="form-group col-sm-4">
       <div class="input-group">
       <span class="input-group-addon">
-        <input type="radio" aria-label="..." name="cobertura">
+        <input type="radio" aria-label="..." name="frm1" value="Local">
       </span>
       <input type="text" class="form-control" aria-label="..." value="Local" readonly>
     </div>
@@ -58,7 +60,7 @@
   <div class="form-group col-sm-4">
      <div class="input-group">
       <span class="input-group-addon">
-        <input type="radio" aria-label="..." name="cobertura">
+        <input type="radio" aria-label="..." name="frm1" value="Regional">
       </span>
       <input type="text" class="form-control" aria-label="..." value="Regional" readonly>
     </div>
@@ -67,7 +69,7 @@
   <div class="form-group col-sm-4">
     <div class="input-group">
       <span class="input-group-addon">
-        <input type="radio" aria-label="..." name="cobertura">
+        <input type="radio" aria-label="..." name="frm1" value="Regional Amplia">
       </span>
       <input type="text" class="form-control" aria-label="..." value="Regional Amplia" readonly>
     </div>
@@ -76,42 +78,42 @@
   </div>
   
   
-  <p><b>- Localizaci贸n</b></p>
+  <p><b>- Localizaci髇</b></p>
   <div class="panel panel-default">
     <div class="panel-body">
   <div class="form-group col-sm-6">
-    <label for="znPln">Zona de Planificaci贸n / Regi贸n:</label>
-    <select class="form-control" id="znPln">
-      <option value="znpl">Zona de Planificaci贸n #1</option>
-      <option value="znpl">Zona de Planificaci贸n #2</option>
-      <option value="znpl">Zona de Planificaci贸n #3</option>
+    <label for="znPln">Zona de Planificaci髇 / Regi髇:</label>
+    <select name="frm1" class="form-control" id="znPln">
+      <option value="Zona de Planificaci髇 #1">Zona de Planificaci髇 #1</option>
+      <option value="Zona de Planificaci髇 #2">Zona de Planificaci髇 #2</option>
+      <option value="Zona de Planificaci髇 #3">Zona de Planificaci髇 #3</option>
     </select>
   </div>
 
   <div class="form-group col-sm-6">
     <label for="prov">Provincia:</label>
-    <select class="form-control" id="prov">
-      <option value="prv">Provincia #1</option>
-      <option value="prv">Provincia #2</option>
-      <option value="prv">Provincia #3</option>
+    <select name="frm1" class="form-control" id="prov">
+      <option value="Provincia #1">Provincia #1</option>
+      <option value="Provincia #2">Provincia #2</option>
+      <option value="Provincia #3">Provincia #3</option>
     </select>
   </div>
 
   <div class="form-group col-sm-6">
-    <label for="canton">Cant贸n:</label>
-    <select class="form-control" id="canton">
-      <option value="cnt">Cant贸n #1</option>
-      <option value="cnt">Cant贸n #2</option>
-      <option value="cnt">Cant贸n #3</option>
+    <label for="canton">Cant髇:</label>
+    <select name="frm1" class="form-control" id="canton">
+      <option value="Cant髇 #1">Cant髇 #1</option>
+      <option value="Cant髇 #2">Cant髇 #2</option>
+      <option value="Cant髇 #3">Cant髇 #3</option>
     </select>
   </div>
 
   <div class="form-group col-sm-6">
     <label for="parroqui">Parroquia:</label>
-    <select class="form-control" id="parroqui">
-      <option value="prrq">Parroquia #1</option>
-      <option value="prrq">Parroquia #2</option>
-      <option value="prrq">Parroquia #3</option>
+    <select name="frm1" class="form-control" id="parroqui">
+      <option value="Parroquia #1">Parroquia #1</option>
+      <option value="Parroquia #2">Parroquia #2</option>
+      <option value="Parroquia #3">Parroquia #3</option>
     </select>
   </div>
   </div></div>
@@ -119,14 +121,14 @@
   <hr>
 
   <div class="form-group">
-    <p><b>1.5. Plazo de Ejecuci贸n:</b></p>
+    <p><b>1.5. Plazo de Ejecuci髇:</b></p>
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Fecha de presentaci贸n</th>
+          <th>Fecha de presentaci髇</th>
           <th>Fecha de inicio</th>
-          <th>Fecha de finalizaci贸n</th>
-          <th>Duraci贸n ( # Meses)</th>
+          <th>Fecha de finalizaci髇</th>
+          <th>Duraci髇 ( # Meses)</th>
         </tr>
       </thead>
       <tbody>
@@ -166,7 +168,7 @@
     
     <table class="table table-striped">
       <tr>
-        <th colspan="5">Desglose de presupuesto por a帽os de ejecuci贸n de proyecto</th>
+        <th colspan="5">Desglose de presupuesto por a駉s de ejecuci髇 de proyecto</th>
       </tr>
       <tr>
         <td>2014</td>
@@ -207,7 +209,7 @@
           <th>Cargo</th>
           <th>Unidad/Dpto.</th>
           <th>Mail</th>
-          <th>Tel茅fono</th>
+          <th>Tel閒ono</th>
         </tr>
       </thead>
       <tbody>
@@ -229,7 +231,7 @@
   </div>
 
   <div class="form-group">
-    <label for="categProy">1.9 Categorizaci贸n del proyecto:</label>
+    <label for="categProy">1.9 Categorizaci髇 del proyecto:</label>
     <select class="form-control" id="categProy">
       <option value="indispensabel">Indispensable</option>
       <option value="necessary">Necesario</option>
@@ -240,3 +242,4 @@
 
 </form>
 
+<div id="result"></div>

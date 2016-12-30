@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="recursos/css/bootstrap.min.css">
   <script src="recursos/js/jquery-1.12.4.min.js"></script>
   <script src="recursos/js/bootstrap.min.js"></script>
+  <script src="recursos/js/view.js"></script>
   <link rel="icon" type="image/png" href="recursos/images/logoPoa.png">
 
   <style>
@@ -151,8 +152,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323250', end
 <script type="text/javascript">
 
   $(document).ready(function() {
+      
+      
     $("#section0").load('forms/0_form.html');
-    $("#section1").load('forms/1_form.html');
+    $("#section1").load('forms/1_form.jsp');
     $("#section2").load('forms/2_form.html');
     $("#section3").load('forms/3_form.html');
     $("#section4").load('forms/4_form.html');

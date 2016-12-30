@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="recursos/css/bootstrap.min.css">
   <script src="recursos/js/jquery-1.12.4.min.js"></script>
   <script src="recursos/js/bootstrap.min.js"></script>
+  <script src="recursos/js/view.js"></script>
   <link rel="icon" type="image/png" href="recursos/images/logoPoa.png">
 
   <style>
@@ -165,153 +166,6 @@ body{
 
   </style>
 
-<script type="text/javascript">
-
-  $(document).ready(function() {
-
-
-    $("#section0").load('forms/0_form.html');
-    $("#section1").load('forms/1_form.html');
-    $("#section2").load('forms/2_form.html');
-    $("#section3").load('forms/3_form.html');
-    $("#section4").load('forms/4_form.html');
-    $("#section5").load('forms/5_form.html');
-    $("#section6").load('forms/6_form.html');
-    $("#section7").load('forms/7_form.html');
-
-    var numberNotify = 0;
-    
-    $("#sectionNotify").hide();
-    
-    $("#btn1").click(function(event) {
-      $("#section0").css("display","none");
-      $("#section1").css("display","block");
-      $("#section2").css("display","none");
-      $("#section3").css("display","none");
-      $("#section4").css("display","none");
-      $("#section5").css("display","none");
-      $("#section6").css("display","none");
-      $("#section7").css("display","none");
-
-    });
-
-    $("#btn2").click(function(event){
-      $("#section0").css("display","none");
-      $("#section1").css("display","none");
-      $("#section2").css("display","block");
-      $("#section3").css("display","none");
-      $("#section4").css("display","none");
-      $("#section5").css("display","none");
-      $("#section6").css("display","none");
-      $("#section7").css("display","none");
-    });
-
-    $("#btn3").click(function(event){
-      $("#section0").css("display","none");
-      $("#section1").css("display","none");
-      $("#section2").css("display","none");
-      $("#section3").css("display","block");
-      $("#section4").css("display","none");
-      $("#section5").css("display","none");
-      $("#section6").css("display","none");
-      $("#section7").css("display","none");
-    });
-
-    $("#btn4").click(function(event){
-      $("#section0").css("display","none");
-      $("#section1").css("display","none");
-      $("#section2").css("display","none");
-      $("#section3").css("display","none");
-      $("#section4").css("display","block");
-      $("#section5").css("display","none");
-      $("#section6").css("display","none");
-      $("#section7").css("display","none");
-    });
-
-    $("#btn5").click(function(event){
-      $("#section0").css("display","none");
-      $("#section1").css("display","none");
-      $("#section2").css("display","none");
-      $("#section3").css("display","none");
-      $("#section4").css("display","none");
-      $("#section5").css("display","block");
-      $("#section6").css("display","none");
-      $("#section7").css("display","none");
-    });
-
-    $("#btn6").click(function(event){
-      $("#section0").css("display","none");
-      $("#section1").css("display","none");
-      $("#section2").css("display","none");
-      $("#section3").css("display","none");
-      $("#section4").css("display","none");
-      $("#section5").css("display","none");
-      $("#section6").css("display","block");
-      $("#section7").css("display","none");
-    });
-
-    $("#btn7").click(function(event){
-      $("#section0").css("display","none");
-      $("#section1").css("display","none");
-      $("#section2").css("display","none");
-      $("#section3").css("display","none");
-      $("#section4").css("display","none");
-      $("#section5").css("display","none");
-      $("#section6").css("display","none");
-      $("#section7").css("display","block");
-    });
-
-    $("#btnNew").click(function(event){
-      $("#sectionNotify").html("<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span>  Nuevo Formulario Creado Correctamente!");
-      numberNotify = numberNotify + 1;
-      $("#numberNotify").html(numNotify(numberNotify));
-      $("#sectionNotify").show();
-      $("#sectionNotify").delay(3000).hide(600);
-    });
-    $("#btnModify").click(function(event){
-      $("#sectionNotify").html("<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span>  Formulario listo para modificar");
-      numberNotify = numberNotify + 1;
-      $("#numberNotify").html(numNotify(numberNotify));
-      $("#sectionNotify").show();
-      $("#sectionNotify").delay(3000).hide(600);
-    });
-    $("#btnView").click(function(event){
-      $("#sectionNotify").html("<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span>  Presentación del Formulario en PDF generada. ");
-      numberNotify = numberNotify + 1;
-      $("#numberNotify").html(numNotify(numberNotify));
-    });
-    $("#btnDelete").click(function(event){
-      $("#sectionNotify").html("<span class='glyphicon glyphicon-remove' aria-hidden='true'></span>  Información de Formulario Eliminada Correctamente.");
-      numberNotify = numberNotify + 1;
-      $("#numberNotify").html(numNotify(numberNotify));
-    });
-    $("#btnSave").click(function(event){
-      $("#sectionNotify").html("<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>  Nueva Información de Formulario Guardada Correctamente!");
-
-      numberNotify = numberNotify + 1;
-      $("#numberNotify").html(numNotify(numberNotify));
-    });
-    $("#btnMessages").click(function(event){
-      $("#sectionNotify").html("<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span>  Revisión del estado del proyecto!");
-      numberNotify = 0;
-      $("#numberNotify").html("");
-    });
-
-
-  });
-
-function numNotify(numberNotify){
-
-  if(numberNotify < 100){
-    return numberNotify ;
-  }else{
-    return "+99";
-  }
-   
-}
-
-</script>
-
 </head>
 <body>
 
@@ -363,11 +217,19 @@ function numNotify(numberNotify){
         </a>
         </li>
         <li class="backgroundLi">
-        <a href="#" id="btnSave" data-toggle="modal" data-target="#alertSave">
+        <a href="#" id="btnSave" class="dropdown" data-toggle="dropdown">
+           <%-- data-toggle="modal" data-target="#alertSave"> --%>
         <div class="whiteColor">
         <span class="glyphicon glyphicon-floppy-disk"></span> Guardar
         </div>
         </a>
+            
+            <ul class="dropdown-menu">
+                <li><a id="save1" href="#">Save #1</a></li>
+                <li><a href="#">Save #2</a></li>
+                <li><a href="#">Save #3</a></li>
+            </ul>
+            
         </li>
         
       </ul>
