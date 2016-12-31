@@ -48,10 +48,10 @@
         
 
   <div class="form-group col-sm-4">
-      <div class="input-group">
+      <div class="input-group ">
       <span class="input-group-addon">
-        <input type="radio" aria-label="..." name="frm1" value="Local">
-      </span>
+          <input type="radio" aria-label="..." name="frm1" value="Local">
+      </span>  
       <input type="text" class="form-control" aria-label="..." value="Local" readonly>
     </div>
   </div>
@@ -133,10 +133,10 @@
       </thead>
       <tbody>
         <tr>
-          <td><input type="date" placeholder="dd/mm/aaaa" class="form-control"></td>
-          <td><input type="date" placeholder="dd/mm/aaaa" class="form-control"></td>
-          <td><input type="date" placeholder="dd/mm/aaaa" class="form-control"></td>
-          <td><input type="number" min="1" class="form-control"></td>
+            <td><input type="date" placeholder="dd/mm/aaaa" class="form-control" id="filingDate"></td>
+            <td><input type="date" placeholder="dd/mm/aaaa" class="form-control" id="startDate"></td>
+            <td><input type="date" placeholder="dd/mm/aaaa" class="form-control" id="finishDate"></td>
+            <td><input type="number" min="1" class="form-control" id="durat"></td>
         </tr>
       </tbody>
     </table>
@@ -155,10 +155,10 @@
       </thead>
       <tbody>
         <tr>
-          <td><input type="text" class="form-control"></td>
-          <td><input type="text" class="form-control"></td>
-          <td><input type="text" class="form-control"></td>
-          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control" id="universityBudget"></td>
+          <td><input type="text" class="form-control" id="sponsorBudget"></td>
+          <td><input type="text" class="form-control" id="iva"></td>
+          <td><input type="text" class="form-control" id="totalBudget"></td>
         </tr>
       </tbody>
     </table>
@@ -178,11 +178,11 @@
         <td>TOTAL</td>
       </tr>
       <tr>
-        <td><input type="text" class="form-control"></td>
-        <td><input type="text" class="form-control"></td>
-        <td><input type="text" class="form-control"></td>
-        <td><input type="text" class="form-control"></td>
-        <td><input type="text" class="form-control"></td>
+        <td><input type="text" class="form-control" id="budget2014"></td>
+        <td><input type="text" class="form-control" id="budget2015"></td>
+        <td><input type="text" class="form-control" id="budget2016"></td>
+        <td><input type="text" class="form-control" id="budget2017"></td>
+        <td><input type="text" class="form-control" id="totalAnnualBudget"></td>
       </tr>
     </table>
   </div>
@@ -197,7 +197,7 @@
     <input type="text" class="form-control" id="sector">
 
     <label for="subsector">Subsector:</label>
-    <input type="text" class="form-control" id="subsector">
+    <input type="text" class="form-control" id="subSector">
   </div>
 
   <div class="form-group">
@@ -215,16 +215,16 @@
       <tbody>
         <tr>
           <td>
-             <select class="form-control" id="namesMUnity">
+             <select class="form-control" id="namesPersonInCharge">
       <option value="nmu">Usuario #1</option>
       <option value="nmu">Usuario #2</option>
       <option value="nmu">Usuario #3</option>
     </select>
           </td>
-          <td><input type="text" class="form-control"></td>
-          <td><input type="text" class="form-control"></td>
-          <td><input type="text" class="form-control"></td>
-          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control" id="positionPersonInCharge"></td>
+          <td><input type="text" class="form-control" id="departmentPersonInCharge"></td>
+          <td><input type="text" class="form-control" id="emailPersonInCharge"></td>
+          <td><input type="text" class="form-control" id="phonePersonInCharge"></td>
         </tr>
       </tbody>
     </table>
@@ -232,7 +232,7 @@
 
   <div class="form-group">
     <label for="categProy">1.9 Categorización del proyecto:</label>
-    <select class="form-control" id="categProy">
+    <select class="form-control" id="categorizationProject">
       <option value="indispensabel">Indispensable</option>
       <option value="necessary">Necesario</option>
       <option value="desirable">Deseable</option>
@@ -242,4 +242,4 @@
 
 </form>
 
-<div id="result"></div>
+<div id="result2"></div>

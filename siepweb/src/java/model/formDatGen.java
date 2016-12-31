@@ -5,7 +5,11 @@
  */
 package model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -33,7 +37,7 @@ public class formDatGen {
     private Date filingDate;//Fecha de presentacion
     private Date startDate;//Fecha de inicio
     private Date finishDate;//Fecha de finalizacion
-    private Date duration;//Duracion
+    private float duration;//Duracion
     private String sector;
     private String subSector;
     private String namesPersonInCharge;//Nombres y Apellidos del responsable del proyecto
@@ -41,12 +45,13 @@ public class formDatGen {
     private String departmentPersonInCharge;//Departamento del responsable del proyecto
     private String emailPersonInCharge;//Email del responsable del proyecto
     private String phonePersonInCharge;//Cargo del responsable del proyecto
-    private String ategorizationProject;//Categorizaciondel proyecto
+    private String categorizationProject;//Categorizaciondel proyecto
 
     public formDatGen() {
     }
 
-    public formDatGen(String CUP, String nameProject, String executingEntity, String executingUnit, String coverage, String planningArea, String province, String canton, String parish, float IVA, float universityBudget, float sponsorBudget, float totalBudget, float budget2014, float budget2015, float budget2016, float budget2017, float totalAnnualBudget, Date filingDate, Date startDate, Date finishDate, Date duration, String sector, String subSector, String namesPersonInCharge, String positionPersonInCharge, String departmentPersonInCharge, String emailPersonInCharge, String phonePersonInCharge, String ategorizationProject) {
+    
+    public formDatGen(String CUP, String nameProject, String executingEntity, String executingUnit, String coverage, String planningArea, String province, String canton, String parish, float IVA, float universityBudget, float sponsorBudget, float totalBudget, float budget2014, float budget2015, float budget2016, float budget2017, float totalAnnualBudget, Date filingDate, Date startDate, Date finishDate, float duration, String sector, String subSector, String namesPersonInCharge, String positionPersonInCharge, String departmentPersonInCharge, String emailPersonInCharge, String phonePersonInCharge, String categorizationProject) {
         this.CUP = CUP;
         this.nameProject = nameProject;
         this.executingEntity = executingEntity;
@@ -76,7 +81,7 @@ public class formDatGen {
         this.departmentPersonInCharge = departmentPersonInCharge;
         this.emailPersonInCharge = emailPersonInCharge;
         this.phonePersonInCharge = phonePersonInCharge;
-        this.ategorizationProject = ategorizationProject;
+        this.categorizationProject = categorizationProject;
     }
 
     public String getCUP() {
@@ -226,35 +231,78 @@ public class formDatGen {
     public Date getFilingDate() {
         return filingDate;
     }
+    //<Format dd/mm/yy>
+    public String getFilingDateDDMMYY(){
+        return new SimpleDateFormat("dd/mm/yyyy").format(this.filingDate);
+    }
 
     public void setFilingDate(Date filingDate) {
         this.filingDate = filingDate;
     }
-
+    
+    public void setFilingDateYYMMDD(String date) {
+       
+            SimpleDateFormat d = new SimpleDateFormat("yyyy-mm-dd");
+        try {
+            this.filingDate = d.parse(date);
+        } catch (ParseException ex) {
+            Logger.getLogger(formDatGen.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     public Date getStartDate() {
         return startDate;
+    }
+    
+    public String getStartDateDDMMYY(){
+        return new SimpleDateFormat("dd/mm/yyyy").format(this.startDate);
     }
 
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
+    
+    public void setStartDateYYMMDD(String date) {
+       
+            SimpleDateFormat d = new SimpleDateFormat("yyyy-mm-dd");
+        try {
+            this.startDate = d.parse(date);
+        } catch (ParseException ex) {
+            Logger.getLogger(formDatGen.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     public Date getFinishDate() {
         return finishDate;
+    }
+    
+    public String getFinishDateDDMMYY(){
+        return new SimpleDateFormat("dd/mm/yyyy").format(this.finishDate);
     }
 
     public void setFinishDate(Date finishDate) {
         this.finishDate = finishDate;
     }
+    public void setFinishDateYYMMDD(String date) {
+            SimpleDateFormat d = new SimpleDateFormat("yyyy-mm-dd");
+        try {
+            this.finishDate = d.parse(date);
+        } catch (ParseException ex) {
+            Logger.getLogger(formDatGen.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
-    public Date getDuration() {
+    public float getDuration() {
         return duration;
     }
 
-    public void setDuration(Date duration) {
+    public String getDurationToString() {
+        return Float.toString(duration);
+    }
+    
+    public void setDuration(float duration) {
         this.duration = duration;
     }
-
+    
     public String getSector() {
         return sector;
     }
@@ -311,17 +359,17 @@ public class formDatGen {
         this.phonePersonInCharge = phonePersonInCharge;
     }
 
-    public String getAtegorizationProject() {
-        return ategorizationProject;
+    public String getCategorizationProject() {
+        return categorizationProject;
     }
 
-    public void setAtegorizationProject(String ategorizationProject) {
-        this.ategorizationProject = ategorizationProject;
+    public void setCategorizationProject(String ategorizationProject) {
+        this.categorizationProject = ategorizationProject;
     }
 
     @Override
     public String toString() {
-        return "formDatGen{" + "CUP=" + CUP + ", nameProject=" + nameProject + ", executingEntity=" + executingEntity + ", executingUnit=" + executingUnit + ", coverage=" + coverage + ", planningArea=" + planningArea + ", province=" + province + ", canton=" + canton + ", parish=" + parish + ", IVA=" + IVA + ", universityBudget=" + universityBudget + ", sponsorBudget=" + sponsorBudget + ", totalBudget=" + totalBudget + ", budget2014=" + budget2014 + ", budget2015=" + budget2015 + ", budget2016=" + budget2016 + ", budget2017=" + budget2017 + ", totalAnnualBudget=" + totalAnnualBudget + ", filingDate=" + filingDate + ", startDate=" + startDate + ", finishDate=" + finishDate + ", duration=" + duration + ", sector=" + sector + ", subSector=" + subSector + ", namesPersonInCharge=" + namesPersonInCharge + ", positionPersonInCharge=" + positionPersonInCharge + ", departmentPersonInCharge=" + departmentPersonInCharge + ", emailPersonInCharge=" + emailPersonInCharge + ", phonePersonInCharge=" + phonePersonInCharge + ", ategorizationProject=" + ategorizationProject + '}';
+        return "formDatGen{" + "CUP=" + CUP + ", nameProject=" + nameProject + ", executingEntity=" + executingEntity + ", executingUnit=" + executingUnit + ", coverage=" + coverage + ", planningArea=" + planningArea + ", province=" + province + ", canton=" + canton + ", parish=" + parish + ", IVA=" + IVA + ", universityBudget=" + universityBudget + ", sponsorBudget=" + sponsorBudget + ", totalBudget=" + totalBudget + ", budget2014=" + budget2014 + ", budget2015=" + budget2015 + ", budget2016=" + budget2016 + ", budget2017=" + budget2017 + ", totalAnnualBudget=" + totalAnnualBudget + ", filingDate=" + filingDate + ", startDate=" + startDate + ", finishDate=" + finishDate + ", duration=" + duration + ", sector=" + sector + ", subSector=" + subSector + ", namesPersonInCharge=" + namesPersonInCharge + ", positionPersonInCharge=" + positionPersonInCharge + ", departmentPersonInCharge=" + departmentPersonInCharge + ", emailPersonInCharge=" + emailPersonInCharge + ", phonePersonInCharge=" + phonePersonInCharge + ", ategorizationProject=" + categorizationProject + '}';
     }
 
 

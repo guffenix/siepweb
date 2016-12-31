@@ -3,18 +3,58 @@ $(document).ready(function() {
     $("#send1").submit(function(){
         alert("enviado frm1");
     });
-
+     $("#save2").click(function()
+     {
+         var coverage = $('input:radio[name=frm1]:checked').val();
+         alert(coverage);
+     });
      $("#save1").click(function(){
-         $("#result").html("Nuevo item");
-         var nameProject = $('#nameProject').val();
-         var numberCUP = $('#numberCUP').val();
-         var executingEntity = $('#implementingEntity').val();
-         var executingUnit = $('#executingUnits').val();
-         var coverage = $('#').val();
+        $("#result").html("Nuevo item");
+        var nameProject = $('#nameProject').val();
+        var numberCUP = $('#numberCUP').val();
+        var executingEntity = $('#implementingEntity').val();
+        var executingUnit = $('#executingUnits').val();
+        var coverage = $('input:radio[name=frm1]:checked').val();
+        var planningArea = $('#znPln').val();//Zona de planificacion
+        var province = $('#prov').val();
+        var canton = $('#canton').val();
+        var parish = $('#parroqui').val();//parroquia
+        var filingDate = $('#filingDate').val();//Fecha de presentacion
+        var startDate = $('#startDate').val();//Fecha de inicio
+        var finishDate = $('#finishDate').val();//Fecha de finalizacion
+        var durationM = $('#durat').val();//Duracion
+        var IVA = $('#iva').val();//
+        var universityBudget = $('#universityBudget').val();//Presupuesto por Aporte de Universidad
+        var sponsorBudget = $('#sponsorBudget').val();//Presupuesto de Entidad Auspiciante/Beneficiaria
+        var totalBudget = $('#totalBudget').val();//Presupuesto total
+        var budget2014 = $('#budget2014').val();//Presupuesto 2014??
+        var budget2015 = $('#budget2015').val();//Presupuesto 2015??
+        var budget2016 = $('#budget2016').val();//Presupuesto 2016??
+        var budget2017 = $('#budget2017').val();//Presupuesto 2017??
+        var totalAnnualBudget = $('#totalAnnualBudget').val();//Presupuesto anual total
+        var sector = $('#sector').val();
+        var subSector = $('#subSector').val();
+        var namesPersonInCharge = $('#namesPersonInCharge').val();//Nombres y Apellidos del responsable del proyecto
+        var positionPersonInCharge = $('#positionPersonInCharge').val();//Cargo del responsable del proyecto
+        var departmentPersonInCharge = $('#departmentPersonInCharge').val();//Departamento del responsable del proyecto
+        var emailPersonInCharge = $('#emailPersonInCharge').val();//Email del responsable del proyecto
+        var phonePersonInCharge = $('#phonePersonInCharge').val();//Cargo del responsable del proyecto
+        var categorizationProject = $('#categorizationProject').val();//Categorizaciondel proyecto
+         
+         
          $.ajax({
                type:'post',
                url:'save/1_saveFormDatGen.jsp',
-               data:"nameProject="+nameProject+"&numberCUP="+numberCUP+"&executingEntity="+executingEntity+"&executingUnit="+executingUnit,
+               data:"nameProject="+nameProject+"&numberCUP="+numberCUP+"&executingEntity="+executingEntity+
+                       "&executingUnit="+executingUnit+"&coverage="+coverage+"&planningArea="+planningArea+
+                       "&province="+province+"&canton="+canton+"&parish="+parish+
+                       "&filingDate="+filingDate+"&startDate="+startDate+"&finishDate="+finishDate+
+                       "&durationM="+durationM+"&iva="+IVA+"&universityBudget="+universityBudget+
+                       "&sponsorBudget="+sponsorBudget+"&totalBudget="+totalBudget+"&budget2014="+budget2014+
+                       "&budget2015="+budget2015+"&budget2016="+budget2016+"&budget2017="+budget2017+
+                       "&totalAnnualBudget="+totalAnnualBudget+"&sector="+sector+"&subSector="+subSector+
+                       "&namesPersonInCharge="+namesPersonInCharge+"&positionPersonInCharge="+positionPersonInCharge+"&departmentPersonInCharge="+departmentPersonInCharge+
+                       "&emailPersonInCharge="+emailPersonInCharge+"&phonePersonInCharge="+phonePersonInCharge+"&categorizationProject="+categorizationProject,
                success:function(respuesta)
                {
                    $("#result").html(respuesta);
