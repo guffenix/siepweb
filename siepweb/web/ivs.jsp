@@ -188,7 +188,8 @@ body{
       <ul class="nav navbar-nav ">
         
         <li class="backgroundLi">
-        <a href="#" id="btnNew" data-toggle="modal" data-target="#alertNew">
+            <a href="index.jsp"  target="_self">
+                <!--id="btnNew" data-toggle="modal" data-target="#alertNew">-->
         <div class="whiteColor">
           <span class="glyphicon glyphicon-plus"></span> Nuevo  
         </div>
