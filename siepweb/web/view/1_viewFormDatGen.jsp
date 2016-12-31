@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page language="java" %>
-
+<h3> </h3>
 <div class="alert alert-info">
   <strong>Proyectos registrados a partir del 2016</strong> <br>
   A continuación se muestran los últimos proyectos registrados.</div>

@@ -180,7 +180,7 @@ body{
       <a class="navbar-brand" href="">
       <div class="whiteColor2">
       <span class="glyphicon glyphicon-home"></span>
-      POA
+      SIEP
       </div>
       </a>
     </div>
@@ -259,7 +259,7 @@ body{
            <a href="#">
            <div class="avatarUser">
            <span>
-           <img class="img-rounded" src="https://avatars2.githubusercontent.com/u/791301?v=3&s=460" style="width:18px">
+               <img class="img-rounded" src="recursos/images/791301.jpg" style="width:18px">
            </span>  
            </div>
            
@@ -273,11 +273,65 @@ body{
 
 
 
-    <div class="container-fluid text-left ">    
+    <div class="container">    
 
+        
+        <div class="row content ">
+            <div class="tab-content">
+                <div class="tab-pane fade in active">
+                    <br><br>
+                    <h3> </h3>
+                    
+                    <br>
+                </div>
+            </div>
+            
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#homeFrm"><span class="glyphicon glyphicon-folder-close greenColor"></span> DATOS GENERALES</a></li>
+                <li><a data-toggle="tab" href="#menuFrm1"><span class="glyphicon glyphicon-folder-close greenColor"></span> DIAGNÓSTICO Y PROBLEMA</a></li>
+                <li><a data-toggle="tab" href="#menuFrm2"><span class="glyphicon glyphicon-folder-close greenColor"></span> OBJETIVOS</a></li>
+                <li><a data-toggle="tab" href="#menuFrm3"><span class="glyphicon glyphicon-folder-close greenColor"></span> VIABILIDAD Y SOSTENIBILIDAD</a></li>
+                <li><a data-toggle="tab" href="#menuFrm4"><span class="glyphicon glyphicon-folder-close greenColor"></span> PRESUPUESTO</a></li>
+                <li><a data-toggle="tab" href="#menuFrm5"><span class="glyphicon glyphicon-folder-close greenColor"></span> MARCO TEORICO</a></li>
+                <li><a data-toggle="tab" href="#menuFrm6"><span class="glyphicon glyphicon-folder-close greenColor"></span> ESTRATEGIA Y EVALUACIÓN</a></li>
+            </ul>
+            
+            <div class="tab-content ">
+                <div id="homeFrm" class="tab-pane fade in active divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/1_form.jsp" %>
+
+                </div>
+                <div id="menuFrm1" class="tab-pane fade divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/2_form.jsp" %>
+                </div>
+                <div id="menuFrm2" class="tab-pane fade divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/3_form.jsp" %>
+                </div>
+                <div id="menuFrm3" class="tab-pane fade divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/4_form.jsp" %>
+                </div>
+                <div id="menuFrm4" class="tab-pane fade divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/5_form.jsp" %>
+                </div>
+                <div id="menuFrm5" class="tab-pane fade divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/6_form.jsp" %>
+                </div>
+                <div id="menuFrm6" class="tab-pane fade divShadow">
+                    <h3> </h3>
+                    <%@include file="forms/7_form.jsp" %>
+                </div>
+            </div>
+        
+        </div>
         <div class="row content ">
 
-            <div class="col-sm-3 sidenav purpleColor">
+<!--            <div class="col-sm-3 sidenav purpleColor">
 
                 <br><br><br>
                 <div class="menuFixed ">
@@ -434,8 +488,8 @@ body{
                 </div> 
                 </div>
 
-            </div>
-            <div class="col-sm-9 text-left purpleColor"> 
+            </div>-->
+<!--            <div class="col-sm-9 text-left purpleColor"> 
 
                 <p></p><p></p>
                 <br><br><br>
@@ -448,7 +502,7 @@ body{
                 <div id="section5" class="divShadow" ></div>
                 <div id="section6" class="divShadow" ></div>
                 <div id="section7" class="divShadow" ></div>
-            </div>
+            </div>-->
 
         </div>
     </div>

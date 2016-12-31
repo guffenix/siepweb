@@ -3,7 +3,6 @@ $(document).ready(function() {
     $("#createFrm").click(function ()
     {
         var url = $('input:radio[name=frm1]:checked').val();
-        //$("#projectType").html(url);
         $(location).attr('href',url+'.jsp');
     });
 
@@ -83,7 +82,7 @@ $(document).ready(function() {
     });
     
     $("#section0").load('forms/0_form.html');
-    $("#section1").load('forms/1_form.jsp');
+//    $("#section1").load('forms/1_form.jsp');
     $("#section2").load('forms/2_form.jsp');
     $("#section3").load('forms/3_form.jsp');
     $("#section4").load('forms/4_form.jsp');
