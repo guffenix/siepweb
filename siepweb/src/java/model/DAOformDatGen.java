@@ -11,9 +11,9 @@ import java.sql.PreparedStatement;
  *
  * @author Edward
  */
-public class DAOformDatGen {
+public class DAOformDatGen extends conexion{
     
-    private conexion objConn;
+//    private conexion objConn;
     PreparedStatement pst = null;
     public boolean addFormDatGen(formDatGen objFormDatGen)
     {
@@ -35,8 +35,8 @@ public class DAOformDatGen {
 
         try {
             
-            objConn = new conexion();
-            pst = objConn.getConexion().prepareStatement(sql);
+            //objConn = new conexion();
+            pst = getConexion().prepareStatement(sql);
             pst.setString(1, objFormDatGen.getNameProject());
             pst.setString(2, objFormDatGen.getCUP());
             pst.setString(3, objFormDatGen.getExecutingEntity());
@@ -74,12 +74,12 @@ public class DAOformDatGen {
                 flag = true;
             }
             pst.close();
-            objConn.getConexion().close();
+            getConexion().close();
             
         } catch (Exception e) {
         }finally{
             try {
-                if (objConn.getConexion() != null) objConn.getConexion().close();
+                if (getConexion() != null) getConexion().close();
                 if (pst != null) pst.close();
             } catch (Exception e) {
                 System.out.println(e);
