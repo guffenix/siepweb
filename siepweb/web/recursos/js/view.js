@@ -1,5 +1,25 @@
 $(document).ready(function() {
+    
+    $("#createFrm").click(function ()
+    {
+        var url = $('input:radio[name=frm1]:checked').val();
+        //$("#projectType").html(url);
+        $(location).attr('href',url+'.jsp');
+    });
 
+    $("#visor").click(function ()
+    {
+
+        $.ajax({
+            type: 'post',
+            url: 'view/1_viewFormDatGen.jsp',
+            success: function (respuesta)
+            {
+                $("#menu1").html(respuesta);
+            }
+        });
+    });
+    
     $("#send1").submit(function(){
         alert("enviado frm1");
     });
@@ -59,7 +79,7 @@ $(document).ready(function() {
                {
                    $("#result").html(respuesta);
                }
-           })
+           });
     });
     
     $("#section0").load('forms/0_form.html');

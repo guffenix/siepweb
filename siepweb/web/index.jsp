@@ -348,42 +348,104 @@ function numNotify(numberNotify){
 
 
 
-<div class="container-fluid text-center">    
-  <div class="row content">
+    <div class="container">
+        <div class="tab-content">
+            <div class="tab-pane fade in active">
+                <br><br>
+                <h3> </h3>
+                <div class="alert alert-success">
+  <strong><span class="glyphicon glyphicon-home"></span> SIEP</strong> <br>
+  Esta aplicación permitirá agilitar los servicios presupuestarios, 
+servirá de apoyo para la correcta administración del presupuesto 
+asignado a cada unidad y/o departamento.
+</div>
+                <br>
+            </div>
+       </div>
+        
+        <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-plus"></span> Crear Nuevo Proyecto</a></li>
+    <li ><a data-toggle="tab" href="#menu1" id="visor" ><span class="glyphicon glyphicon-sunglasses"></span> Ver Proyectos</a></li>
+    <li><a data-toggle="tab" href="#menu2"><span class="glyphicon glyphicon-pencil"></span> Modificar Proyecto</a></li>
+    <li><a data-toggle="tab" href="#menu3"><span class="glyphicon glyphicon-erase"></span> Eliminar Proyecto</a></li>
+  </ul>
 
-  <div id="menuTitle">
-  <div class="col-sm-12">
-  <br>
-  <img src="recursos/images/logoPoa.png" style="width:30%;">  
+  <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+          
+          <div class="alert alert-info">
+  <strong>Selección </strong> <br>
+          Elija una opción para crear 
+      un nuevo proyecto a través de un formulario</div>
+          <form class="form-inline" role="form">
+              
+                  <div class="input-group ">
+                      <span class="input-group-addon">
+                          <input type="radio" aria-label="..." name="frm1" value="ivs">
+                      </span>  
+                      <input type="text" class="form-control" aria-label="..." value="Proyecto de Investigación" readonly>
+                  </div>
+
+  
+                  <div class="input-group">
+                      <span class="input-group-addon">
+                          <input type="radio" aria-label="..." name="frm1" value="edu">
+                      </span>
+                      <input type="text" class="form-control" aria-label="..." value="Proyecto de Educación" readonly>
+                  </div>
+                  <div class="input-group">
+                      <span class="input-group-addon">
+                          <input type="radio" aria-label="..." name="frm1" value="ivr">
+                      </span>
+                      <input type="text" class="form-control" aria-label="..." value="Proyecto de Inversión" readonly>
+                  </div>
+              
+
+              <button type="button" class="btn btn-primary" id="createFrm" >Continuar</button>
+              
+          </form>
+          <div id="projectType" class="tab-content">
+                  
+              </div>
+      </div>
+    <div id="menu1" class="tab-pane fade ">
+
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <div class="alert alert-info">
+  <strong>Importante!</strong> <br>Ingrese el número CUP del proyecto que desea modificar,
+  recuerde que solo se podrá modificar el proyecto mientras no se haya enviado.</div>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label for="idm">CUP: </label>
+                <input type="text" class="form-control" id="idm" placeholder="Ej.: 123456789.1234.123456"/>
+            </div>
+            <button type="button" class="btn btn-primary" id="envmodificar">Modificar</button>
+            <button type="button" class="btn btn-primary" id="evnguardar" style="display: none" >Guardar</button>
+        </form>
+        <div id="datosModificados" class="tab-content">
+        </div>
+        <div id="prueba" class="tab-content"></div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <div class="alert alert-info">
+  <strong>Aviso!</strong> <br>Ingrese el número CUP del proyecto que desea eliminar,
+  recuerde que una vez eliminado el proyecto no se podrá recuperar.</div>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label for="id">CUP</label>
+                <input type="text" class="form-control" id="id" placeholder="Ej.: 123456789.1234.123456"/>
+            </div>
+            <button type="button" class="btn btn-primary" id="enveliminar">Eliminar</button>
+            
+        </form>
+        <div id="estadoEliminar" >
+
+        </div>
+    </div>
   </div>
-    <div id="frm1" class="col-sm-4 divItem">
-    <div class="imagenSelected">
-    <img src="recursos/images/frm1.png">
     
-    </div>
-    <br>
-      <div class="descriptiveText">
-      PROYECTOS DE INVESTIGACIÓN</div>
-    </div>
 
-    <div id="frm2" class="col-sm-4">
-    <div class="imagenSelected">
-    <img src="recursos/images/frm2.png">
-    </div><br>
-      <div class="descriptiveText">
-      PROYECTOS DE INVERSIÓN</div>
-    </div>
-
-    <div id="frm3" class="col-sm-4">
-    <div class="imagenSelected">
-    <img src="recursos/images/frm3.png">
-    </div><br>
-      <div class="descriptiveText">
-      PROYECTOS DE EDUCACIÓN</div>
-    </div>
-  </div>
-
-  </div>
 </div>
 
 <footer class="navbar navbar-default navbar-fixed-bottom">
