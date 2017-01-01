@@ -222,6 +222,7 @@ body{
            <%-- data-toggle="modal" data-target="#alertSave"> --%>
         <div class="whiteColor">
         <span class="glyphicon glyphicon-floppy-disk"></span> Guardar
+        <span class="caret"></span>
         </div>
         </a>
             
@@ -330,9 +331,9 @@ body{
             </div>
         
         </div>
-        <div class="row content ">
+<!--        <div class="row content ">
 
-<!--            <div class="col-sm-3 sidenav purpleColor">
+            <div class="col-sm-3 sidenav purpleColor">
 
                 <br><br><br>
                 <div class="menuFixed ">
@@ -489,8 +490,8 @@ body{
                 </div> 
                 </div>
 
-            </div>-->
-<!--            <div class="col-sm-9 text-left purpleColor"> 
+            </div>
+            <div class="col-sm-9 text-left purpleColor"> 
 
                 <p></p><p></p>
                 <br><br><br>
@@ -503,9 +504,9 @@ body{
                 <div id="section5" class="divShadow" ></div>
                 <div id="section6" class="divShadow" ></div>
                 <div id="section7" class="divShadow" ></div>
-            </div>-->
+            </div>
 
-        </div>
+        </div>-->
     </div>
 
 <footer class="navbar navbar-default navbar-fixed-bottom" style="display:none;">
