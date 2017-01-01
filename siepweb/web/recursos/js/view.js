@@ -29,6 +29,8 @@ $(document).ready(function() {
      });
      $("#save1").click(function(){
         $("#result").html("Nuevo item");
+        
+        //To 1_saveFormDatGen (Datos Generales)
         var nameProject = $('#nameProject').val();
         var numberCUP = $('#numberCUP').val();
         var executingEntity = $('#implementingEntity').val();
@@ -79,6 +81,10 @@ $(document).ready(function() {
                    $("#result").html(respuesta);
                }
            });
+           
+           //To 2_saveFormDiagPrbl
+           
+           
     });
     
     $("#section0").load('forms/0_form.html');

@@ -21,10 +21,10 @@ import java.util.Locale;
  */
 public class conexion {
         String db = "xe";
-//        String user = "poa";
-        String user = "utic";
-//        String passwd = "espe";
-        String passwd = "123456";
+        String user = "poa";
+//        String user = "utic";
+        String passwd = "espe";
+//        String passwd = "123456";
         String port = "1521";
         String classname = "oracle.jdbc.OracleDriver";
         String hostname = "localhost";
