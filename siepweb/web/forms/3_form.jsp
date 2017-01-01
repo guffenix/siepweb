@@ -13,17 +13,22 @@
 	  </div>
 
 	  <p><b>Objetivos Específicos:</b></p>
-	  <div class="input-group">
-	  	<input type="text" class="form-control" aria-label="...">
-		  <div class="input-group-btn">
-	    <button type="button" class="btn btn-default ">
-          <span class="glyphicon glyphicon-plus"></span>
-        </button>
-        <button type="button" class="btn btn-default ">
-          <span class="glyphicon glyphicon-minus"></span>
-        </button>
-		  </div>
-	  </div>
+          <div class="input-group" id="main">
+              <input type="text" class="form-control" aria-label="..." placeholder="Objetivo específico">
+              <div class="input-group-btn">
+                  <button type="button" class="btn btn-default " id="addInput">
+                      <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                  <button type="button" class="btn btn-default " id="delInput" disabled>
+                      <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+              </div>
+          </div>
+          <div class="input-group" id="main">
+          <button type="button" class="btn btn-default " id="muestraT" value="MUESTRA">
+              MUESTRA
+          </button>
+          </div>
 
 
 	  <div class="form-group" id="namePro">
@@ -132,3 +137,4 @@
 	</table>
 
  </form>
+<div id="result3"></div>

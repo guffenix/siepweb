@@ -9,6 +9,7 @@
   <script src="recursos/js/jquery-1.12.4.min.js"></script>
   <script src="recursos/js/bootstrap.min.js"></script>
   <script src="recursos/js/view.js"></script>
+  <script src="recursos/js/add_del.js"></script>
   <link rel="icon" type="image/png" href="recursos/images/logoPoa.png">
 
   <style>
@@ -148,10 +149,10 @@ body{
     }
 
     .divShadow{
-      margin: 10px;
+      /*margin: 10px;*/
       
       margin-bottom: 100px;
-      padding: 10px;
+      padding: 30px 30px;
       background-color: rgb(255,255,255);
       display: none;
       -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
