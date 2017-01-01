@@ -1,5 +1,65 @@
 $(document).ready(function() {
     
+    $("#opS1").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("1_saveFormDatGen");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#opS2").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("2_saveFormDiagPrbl");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#opS3").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("3_saveXXX");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#opS4").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("4_saveXXX");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#opS5").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("5_saveXXX");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#opS6").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("6_saveXXX");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#opS6").click(function (){
+        $('#feedback').show();
+        $("#id_frm").val("6_saveXXX");
+        $("#feedback").html($("#id_frm").val());
+    });
+    $("#saveGen").click(function(){
+        var id_frm = $("#id_frm").val();
+        var newUrl = "";
+        $('#feedback').show();
+        if (id_frm === "1_saveFormDatGen"){
+            newUrl = "save/"+id_frm+".jsp";
+        }else if (id_frm === "2_saveFormDiagPrbl"){
+            newUrl = "save/"+id_frm+".jsp";
+        }else if (id_frm === "3_saveXXX"){
+            newUrl = "save/"+id_frm+".jsp";
+        }else if (id_frm === "4_saveXXX"){
+            newUrl = "save/"+id_frm+".jsp";
+        }else if (id_frm === "5_saveXXX"){
+            newUrl = "save/"+id_frm+".jsp";
+        }else if (id_frm === "6_saveXXX"){
+            newUrl = "save/"+id_frm+".jsp";
+        }else if (id_frm === "7_saveXXX"){
+            newUrl = "save/"+id_frm+".jsp";
+        }
+        $("#feedback").html("redireccionando: "+ newUrl);
+        $('#feedback').delay(3000);
+        $('#feedback').hide(1000);
+        
+    });
+    
     $("#createFrm").click(function ()
     {
         var url = $('input:radio[name=frm1]:checked').val();
@@ -19,9 +79,7 @@ $(document).ready(function() {
         });
     });
     
-    $("#send1").submit(function(){
-        alert("enviado frm1");
-    });
+    
      $("#save2").click(function()
      {
          var coverage = $('input:radio[name=frm1]:checked').val();

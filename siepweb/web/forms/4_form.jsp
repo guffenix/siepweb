@@ -1,3 +1,5 @@
+<input id="id_frm" type="hidden" name="id_frm" value="">
+
   <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>VIABILIDAD Y PLAN DE SOSTENIBILIDAD </b></p>
  <form>

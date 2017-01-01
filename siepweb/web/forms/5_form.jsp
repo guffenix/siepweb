@@ -1,4 +1,6 @@
-  <p><span class="glyphicon glyphicon-list-alt"></span>
+<input id="id_frm" type="hidden" name="id_frm" value="">
+
+<p><span class="glyphicon glyphicon-list-alt"></span>
  <b>PRESUPUESTO (2014-2017) </b></p>
  <form>
 

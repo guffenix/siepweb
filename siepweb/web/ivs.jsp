@@ -76,6 +76,14 @@ body{
     }
     .whiteColor2{
       color: rgb(255,255,255);
+      
+    }
+    .whiteColoreV1{
+        color: rgb(255,255,255);
+    }
+    .whiteColoreV1:hover{
+        color: rgb(255,255,255);
+        background-color: #286090;
     }
 
     .greenDarkColor{
@@ -211,11 +219,11 @@ body{
         </a>
         </li>
         <li class="backgroundLi">
-        <a href="#" id="btnDelete" data-toggle="modal" data-target="#alertDelete">
-        <div class="whiteColor">
-        <span class="glyphicon glyphicon-erase"></span> Eliminar
-        </div>
-        </a>
+            <a href="#" id="btnDelete" data-toggle="modal" data-target="#alertDelete">
+                <div class="whiteColor">
+                    <span class="glyphicon glyphicon-erase"></span> Eliminar
+                </div>
+            </a>
         </li>
         <li class="backgroundLi">
         <a href="#" id="btnSave" class="dropdown" data-toggle="dropdown">
@@ -228,12 +236,18 @@ body{
             
             <ul class="dropdown-menu">
                 <li><a id="save1" href="#">Save #1</a></li>
-                <li><a href="#">Save #2</a></li>
-                <li><a href="#">Save #3</a></li>
+                <li><a id="saveGen" href="#">Save #2</a></li>
             </ul>
             
         </li>
         
+        <li class="backgroundLi" >
+            <a >
+                <div class="whiteColoreV1" id="feedback" >
+                    
+                </div>
+            </a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li>
@@ -289,13 +303,13 @@ body{
             </div>
             
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#homeFrm"><span class="glyphicon glyphicon-folder-close greenColor"></span> DATOS GENERALES</a></li>
-                <li><a data-toggle="tab" href="#menuFrm1"><span class="glyphicon glyphicon-folder-close greenColor"></span> DIAGNÓSTICO Y PROBLEMA</a></li>
-                <li><a data-toggle="tab" href="#menuFrm2"><span class="glyphicon glyphicon-folder-close greenColor"></span> OBJETIVOS</a></li>
-                <li><a data-toggle="tab" href="#menuFrm3"><span class="glyphicon glyphicon-folder-close greenColor"></span> VIABILIDAD Y SOSTENIBILIDAD</a></li>
-                <li><a data-toggle="tab" href="#menuFrm4"><span class="glyphicon glyphicon-folder-close greenColor"></span> PRESUPUESTO</a></li>
-                <li><a data-toggle="tab" href="#menuFrm5"><span class="glyphicon glyphicon-folder-close greenColor"></span> MARCO TEORICO</a></li>
-                <li><a data-toggle="tab" href="#menuFrm6"><span class="glyphicon glyphicon-folder-close greenColor"></span> ESTRATEGIA Y EVALUACIÓN</a></li>
+                <li class="active"><a id="opS1" data-toggle="tab" href="#homeFrm"><span class="glyphicon glyphicon-folder-close greenColor"></span> DATOS GENERALES</a></li>
+                <li><a id="opS2" data-toggle="tab" href="#menuFrm1"><span class="glyphicon glyphicon-folder-close greenColor"></span> DIAGNÓSTICO Y PROBLEMA</a></li>
+                <li><a id="opS3" data-toggle="tab" href="#menuFrm2"><span class="glyphicon glyphicon-folder-close greenColor"></span> OBJETIVOS</a></li>
+                <li><a id="opS4" data-toggle="tab" href="#menuFrm3"><span class="glyphicon glyphicon-folder-close greenColor"></span> VIABILIDAD Y SOSTENIBILIDAD</a></li>
+                <li><a id="opS5" data-toggle="tab" href="#menuFrm4"><span class="glyphicon glyphicon-folder-close greenColor"></span> PRESUPUESTO</a></li>
+                <li><a id="opS6" data-toggle="tab" href="#menuFrm5"><span class="glyphicon glyphicon-folder-close greenColor"></span> MARCO TEORICO</a></li>
+                <li><a id="opS7" data-toggle="tab" href="#menuFrm6"><span class="glyphicon glyphicon-folder-close greenColor"></span> ESTRATEGIA Y EVALUACIÓN</a></li>
             </ul>
             
             <div class="tab-content ">

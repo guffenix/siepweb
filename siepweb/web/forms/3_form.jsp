@@ -1,4 +1,6 @@
- <p><span class="glyphicon glyphicon-list-alt"></span>
+<input id="id_frm" type="hidden" name="id_frm" value="">
+
+<p><span class="glyphicon glyphicon-list-alt"></span>
  <b>OBJETIVOS DEL PROYECTO</b></p>
  <form>
  <p><b>3.1. Objetivo general y objetivos específicos:</b></p>

@@ -1,5 +1,4 @@
-<script src="recursos/js/view.js"></script>
-
+<input id="id_frm" type="hidden" name="id_frm" value="1_saveFormDatGen">
     <p><span class="glyphicon glyphicon-list-alt"></span>
         <b><% out.print("DATOS GENERALES DEL PROYECTO");%> </b></p>
     <form id="objFrm1" method="post">
