@@ -31,6 +31,7 @@ $(document).ready(function() {
         $("#result").html("Nuevo item");
         
         //To 1_saveFormDatGen (Datos Generales)
+        
         var nameProject = $('#nameProject').val();
         var numberCUP = $('#numberCUP').val();
         var executingEntity = $('#implementingEntity').val();
@@ -62,8 +63,20 @@ $(document).ready(function() {
         var phonePersonInCharge = $('#phonePersonInCharge').val();//Cargo del responsable del proyecto
         var categorizationProject = $('#categorizationProject').val();//Categorizaciondel proyecto
          
-         
-         $.ajax({
+        if(nameProject=="" || numberCUP=="" || executingEntity=="" || executingUnit=="" || coverage=="" 
+                || planningArea=="" || province=="" || canton=="" || parish=="" || filingDate=="" 
+                || startDate=="" || finishDate=="" || durationM=="" || IVA=="" || universityBudget==""
+                || sponsorBudget=="" || totalBudget=="" || budget2014=="" || budget2015==""
+                || budget2016=="" || budget2017=="" || totalAnnualBudget=="" || sector=="" || subSector==""
+                || namesPersonInCharge=="" || positionPersonInCharge=="" || departmentPersonInCharge==""
+                || emailPersonInCharge=="" || phonePersonInCharge=="" || categorizationProject=="")
+        {
+            alert("Complete todos los campos y vuelva a intentar.");
+            document.getElementById('nameProject').style.borderColor = "red";
+        }
+        else{
+            
+            $.ajax({
                type:'post',
                url:'save/1_saveFormDatGen.jsp',
                data:"nameProject="+nameProject+"&numberCUP="+numberCUP+"&executingEntity="+executingEntity+
@@ -81,6 +94,8 @@ $(document).ready(function() {
                    $("#result").html(respuesta);
                }
            });
+        }
+         
            
            //To 2_saveFormDiagPrbl
            

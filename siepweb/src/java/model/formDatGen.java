@@ -367,6 +367,7 @@ public class formDatGen {
         this.categorizationProject = ategorizationProject;
     }
 
+    
     @Override
     public String toString() {
         return "formDatGen{" + "CUP=" + CUP + ", nameProject=" + nameProject + ", executingEntity=" + executingEntity + ", executingUnit=" + executingUnit + ", coverage=" + coverage + ", planningArea=" + planningArea + ", province=" + province + ", canton=" + canton + ", parish=" + parish + ", IVA=" + IVA + ", universityBudget=" + universityBudget + ", sponsorBudget=" + sponsorBudget + ", totalBudget=" + totalBudget + ", budget2014=" + budget2014 + ", budget2015=" + budget2015 + ", budget2016=" + budget2016 + ", budget2017=" + budget2017 + ", totalAnnualBudget=" + totalAnnualBudget + ", filingDate=" + filingDate + ", startDate=" + startDate + ", finishDate=" + finishDate + ", duration=" + duration + ", sector=" + sector + ", subSector=" + subSector + ", namesPersonInCharge=" + namesPersonInCharge + ", positionPersonInCharge=" + positionPersonInCharge + ", departmentPersonInCharge=" + departmentPersonInCharge + ", emailPersonInCharge=" + emailPersonInCharge + ", phonePersonInCharge=" + phonePersonInCharge + ", ategorizationProject=" + categorizationProject + '}';

@@ -5,7 +5,7 @@
     <form id="objFrm1" method="post">
         <div class="form-group" id="namePro">
             <label for="nameProject">1.1. Nombre del Proyecto:</label>
-            <input id="nameProject" name="frm1" type="text" class="form-control"  >
+            <input id="nameProject" name="frm1" type="text" class="form-control" required="required" >
         </div>
         <div class="form-group">
             <p><b>1.2. CUP:</b></p>
@@ -50,7 +50,7 @@
                 <div class="form-group col-sm-4">
                     <div class="input-group ">
                         <span class="input-group-addon">
-                            <input type="radio" aria-label="..." name="frm1" value="Local">
+                            <input type="radio" aria-label="..." name="frm1" value="Local" checked>
                         </span>  
                         <input type="text" class="form-control" aria-label="..." value="Local" readonly>
                     </div>
@@ -155,10 +155,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="text" class="form-control" id="universityBudget"></td>
-                        <td><input type="text" class="form-control" id="sponsorBudget"></td>
-                        <td><input type="text" class="form-control" id="iva"></td>
-                        <td><input type="text" class="form-control" id="totalBudget"></td>
+                        <td><input type="text" class="form-control" id="universityBudget" placeholder="0.00"></td>
+                        <td><input type="text" class="form-control" id="sponsorBudget" placeholder="0.00"></td>
+                        <td><input type="text" class="form-control" id="iva" placeholder="0.00"></td>
+                        <td><input type="text" class="form-control" id="totalBudget" placeholder="0.00"></td>
                     </tr>
                 </tbody>
             </table>
@@ -178,11 +178,11 @@
                     <td>TOTAL</td>
                 </tr>
                 <tr>
-                    <td><input type="text" class="form-control" id="budget2014"></td>
-                    <td><input type="text" class="form-control" id="budget2015"></td>
-                    <td><input type="text" class="form-control" id="budget2016"></td>
-                    <td><input type="text" class="form-control" id="budget2017"></td>
-                    <td><input type="text" class="form-control" id="totalAnnualBudget"></td>
+                    <td><input type="text" class="form-control" id="budget2014" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" id="budget2015" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" id="budget2016" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" id="budget2017" placeholder="0.00"></td>
+                    <td><input type="text" class="form-control" id="totalAnnualBudget" placeholder="0.00"></td>
                 </tr>
             </table>
         </div>
@@ -223,7 +223,7 @@
                         </td>
                         <td><input type="text" class="form-control" id="positionPersonInCharge"></td>
                         <td><input type="text" class="form-control" id="departmentPersonInCharge"></td>
-                        <td><input type="text" class="form-control" id="emailPersonInCharge"></td>
+                        <td><input type="text" class="form-control" id="emailPersonInCharge" placeholder="email@ejemplo.com"></td>
                         <td><input type="text" class="form-control" id="phonePersonInCharge"></td>
                     </tr>
                 </tbody>

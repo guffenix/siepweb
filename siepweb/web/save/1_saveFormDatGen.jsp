@@ -7,7 +7,7 @@
 <% 
     
             DAOformDatGen objDAOFormDatGen = new DAOformDatGen();
-            formDatGen objFormDatGen = new formDatGen();
+            formDatGen objFormDatGen = new formDatGen(); 
             objFormDatGen.setCUP(request.getParameter("numberCUP"));
             objFormDatGen.setNameProject(request.getParameter("nameProject"));
             objFormDatGen.setExecutingEntity(request.getParameter("executingEntity"));

@@ -229,7 +229,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323250', end
 
                     <div class="input-group ">
                         <span class="input-group-addon">
-                            <input type="radio" aria-label="..." name="frm1" value="ivs">
+                            <input type="radio" aria-label="..." name="frm1" value="ivs" checked>
                         </span>  
                         <input type="text" class="form-control" aria-label="..." value="Proyecto de Investigación" readonly>
                     </div>
