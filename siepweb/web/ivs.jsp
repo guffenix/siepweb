@@ -145,7 +145,7 @@ body{
 
     .menuFixed{
       position: fixed; 
-      width: 24%;
+      
     }
 
     .divShadow{
@@ -171,6 +171,9 @@ body{
       -moz-box-shadow: 0px 0px 3px 1px rgba(60,120,75,0.75);
       box-shadow: 0px 0px 3px 1px rgba(60,120,75,0.75);
 
+    }
+    #fucciaColor{
+        background-color: blueviolet;
     }
 
   </style>
@@ -292,10 +295,10 @@ body{
 
     <div class="container">    
 
-        
+
         <div class="row content ">
-            <div class="tab-content">
-                <div class="tab-pane fade in active">
+            <div class="tab-content ">
+                <div class="tab-pane fade in active ">
                     <br><br>
                     <h3> </h3>
                     
@@ -303,14 +306,14 @@ body{
                 </div>
             </div>
             
-            <ul class="nav nav-tabs">
-                <li class="active"><a id="opS1" data-toggle="tab" href="#homeFrm"><span class="glyphicon glyphicon-folder-close greenColor"></span> DATOS GENERALES</a></li>
-                <li><a id="opS2" data-toggle="tab" href="#menuFrm1"><span class="glyphicon glyphicon-folder-close greenColor"></span> DIAGNÓSTICO Y PROBLEMA</a></li>
-                <li><a id="opS3" data-toggle="tab" href="#menuFrm2"><span class="glyphicon glyphicon-folder-close greenColor"></span> OBJETIVOS</a></li>
-                <li><a id="opS4" data-toggle="tab" href="#menuFrm3"><span class="glyphicon glyphicon-folder-close greenColor"></span> VIABILIDAD Y SOSTENIBILIDAD</a></li>
-                <li><a id="opS5" data-toggle="tab" href="#menuFrm4"><span class="glyphicon glyphicon-folder-close greenColor"></span> PRESUPUESTO</a></li>
-                <li><a id="opS6" data-toggle="tab" href="#menuFrm5"><span class="glyphicon glyphicon-folder-close greenColor"></span> MARCO TEORICO</a></li>
-                <li><a id="opS7" data-toggle="tab" href="#menuFrm6"><span class="glyphicon glyphicon-folder-close greenColor"></span> ESTRATEGIA Y EVALUACIÓN</a></li>
+            <ul class="nav nav-tabs ">
+                <li class="active"><a id="opS1" data-toggle="tab" href="#homeFrm"><span class="glyphicon glyphicon-folder-close greenColor"></span> Datos Generales</a></li>
+                <li><a id="opS2" data-toggle="tab" href="#menuFrm1"><span class="glyphicon glyphicon-folder-close greenColor"></span> Diagnóstico y Problema</a></li>
+                <li><a id="opS3" data-toggle="tab" href="#menuFrm2"><span class="glyphicon glyphicon-folder-close greenColor"></span> Objetivos</a></li>
+                <li><a id="opS4" data-toggle="tab" href="#menuFrm3"><span class="glyphicon glyphicon-folder-close greenColor"></span> Viabilidad y Sostenibilidad</a></li>
+                <li><a id="opS5" data-toggle="tab" href="#menuFrm4"><span class="glyphicon glyphicon-folder-close greenColor"></span> Presupuesto</a></li>
+                <li><a id="opS6" data-toggle="tab" href="#menuFrm5"><span class="glyphicon glyphicon-folder-close greenColor"></span> Marco Teórico</a></li>
+                <li><a id="opS7" data-toggle="tab" href="#menuFrm6"><span class="glyphicon glyphicon-folder-close greenColor"></span> Estrategia y Evaluación</a></li>
             </ul>
             
             <div class="tab-content ">
