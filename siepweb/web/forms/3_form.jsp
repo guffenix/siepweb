@@ -77,64 +77,63 @@
 
    <p><b>3.2. Indicadores de resultado:</b></p>
 
+   <table class="table table-hover" id="ind_result" >
+       <tr >
+           <th>Indicador</th>
+           <th>Fórmula</th>
+           <th>Meta</th>
+       </tr>
+       <td colspan="3">Objetivo Específico</td>
+       <tr >
+           <td><input type="text" class="form-control"></td>
+           <td><input type="text" class="form-control"></td>
+           <td><input type="text" class="form-control"></td>
+       </tr>         
+   </table>
+ 
+   <br>
+   <p>Descripción adicional de ayuda.</p>
+   <br>
+
+   <p><b>3.3. Matriz de Marco Lógico:</b></p>
    <table class="table table-striped">
-	  <tr>
-	    <th>Indicador</th>
-	    <th>Fórmula</th>
-	    <th>Meta</th>
-	  </tr>
+       <tr>
+           <th>Resumen Narrativo de Objetivos</th>
+           <th>Indicadores Verificables Objetivamente</th>
+           <th>Medios de Verificación</th>
+           <th>Supuestos</th>
+       </tr>
+       <tr>
+           <td><input type="text" class="form-control" value="Resumen Narrativo"></td>
+           <td><input type="text" class="form-control"></td>
+           <td><input type="text" class="form-control"></td>
+           <td>
+               <input type="text" class="form-control">
+               <input type="radio" name="meta" value="prct"> (% Porcentaje) 
+               <input type="radio" name="meta" value="num"> (# Numérico) 
+           </td>
+       </tr>
 
-	  <tr>
-	    <td><input type="text" class="form-control"></td>
-	    <td><input type="text" class="form-control"></td>
-	    <td><input type="text" class="form-control"></td>
-	  </tr>
+       <tr>
+           <td colspan="4">ACTIVIDADES: COMPONENTE # COSTO $ 000.000</td>
+       </tr>
+       <tr>
+           <th>Resumen Narrativo de Objetivos</th>
+           <th>Costo</th>
+           <th>Medios de Verificación</th>
+           <th>Supuestos</th>
+       </tr>
+       <tr>
+           <td><input type="text" class="form-control"></td>
+           <td><input type="text" class="form-control"></td>
+           <td><input type="text" class="form-control"></td>
+           <td><input type="text" class="form-control"></td>
+       </tr>
 
-	</table>
-	<p>Descripción adicional de ayuda.</p>
-	<br>
-
-	 <p><b>3.3. Matriz de Marco Lógico:</b></p>
-	 <table class="table table-striped">
-	  <tr>
-	    <th>Resumen Narrativo de Objetivos</th>
-	    <th>Indicadores Verificables Objetivamente</th>
-	    <th>Medios de Verificación</th>
-	    <th>Supuestos</th>
-	  </tr>
-	  <tr>
-	    <td><input type="text" class="form-control" value="Resumen Narrativo"></td>
-	    <td><input type="text" class="form-control"></td>
-	    <td><input type="text" class="form-control"></td>
-	    <td>
-	    <input type="text" class="form-control">
-  <input type="radio" name="meta" value="prct"> (% Porcentaje) 
-    <input type="radio" name="meta" value="num"> (# Numérico) 
-	    </td>
-	  </tr>
-
-
-	  <tr>
-	    <td colspan="4">ACTIVIDADES: COMPONENTE # COSTO $ 000.000</td>
-	  </tr>
-	  <tr>
-	    <th>Resumen Narrativo de Objetivos</th>
-	    <th>Costo</th>
-	    <th>Medios de Verificación</th>
-	    <th>Supuestos</th>
-	  </tr>
-	  <tr>
-	    <td><input type="text" class="form-control"></td>
-	    <td><input type="text" class="form-control"></td>
-	    <td><input type="text" class="form-control"></td>
-	    <td><input type="text" class="form-control"></td>
-	  </tr>
-	 
-	  <tr>
-	    <td>TOTAL PROYECTO<br></td>
-	    <td colspan="3"><input type="text" class="form-control"></td>
-	  </tr>
-	</table>
-
+       <tr>
+           <td>TOTAL PROYECTO<br></td>
+           <td colspan="3"><input type="text" class="form-control"></td>
+       </tr>
+   </table>
  </form>
 <div id="result3"></div>
