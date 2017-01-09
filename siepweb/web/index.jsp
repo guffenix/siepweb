@@ -264,7 +264,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323250', end
                 <div class="alert alert-info">
                     <strong>Importante!</strong> <br>Ingrese el número CUP del proyecto que desea modificar,
                     recuerde que solo se podrá modificar el proyecto mientras no se haya enviado.</div>
-                <form class="form-inline" role="form">
+                <form class="form" role="form">
                     <div class="form-group">
                         <label for="idm">CUP: </label>
                         <input type="text" class="form-control" id="idm" placeholder="Ej.: 123456789.1234.123456"/>
@@ -281,7 +281,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323250', end
                 <div class="alert alert-info">
                     <strong>Aviso!</strong> <br>Ingrese el número CUP del proyecto que desea eliminar,
                     recuerde que una vez eliminado el proyecto no se podrá recuperar.</div>
-                <form class="form-inline" role="form">
+                <form class="form" role="form">
                     <div class="form-group">
                         <label for="id">CUP</label>
                         <input type="text" class="form-control" id="id" placeholder="Ej.: 123456789.1234.123456"/>

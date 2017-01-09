@@ -62,6 +62,11 @@ $(document).ready(function() {
             newUrl = "save/"+id_frm+".jsp";
         }else if (id_frm === "3_saveXXX"){
             newUrl = "save/"+id_frm+".jsp";
+            
+            $("#objFrm3").submit(function( event ) {
+                alert( "Validando." );
+                event.preventDefault();
+              });
         }else if (id_frm === "4_saveXXX"){
             newUrl = "save/"+id_frm+".jsp";
         }else if (id_frm === "5_saveXXX"){
