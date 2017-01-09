@@ -14,7 +14,7 @@
 
 	  <p><b>Objetivos Específicos:</b></p>
           <div class="input-group" id="main">
-              <input type="text" class="form-control" aria-label="..." placeholder="Objetivo específico">
+              <input id="0" type="text" class="form-control specificObjs" aria-label="..." placeholder="Objetivo específico">
               <div class="input-group-btn">
                   <button type="button" class="btn btn-default " id="addInput">
                       <span class="glyphicon glyphicon-plus"></span>
@@ -25,8 +25,8 @@
               </div>
           </div>
           <div class="input-group" id="main">
-          <button type="button" class="btn btn-default " id="muestraT" value="MUESTRA">
-              MUESTRA
+          <button type="button" class="btn btn-default greenDarkColor" id="objtModules" value="Agregar Objetivos y Módulos">
+              Agregar Objetivos y Módulos
           </button>
           </div>
 
@@ -38,35 +38,81 @@
       <span class="input-group-addon">
         <input type="checkbox" aria-label="..." value="objt1">
       </span>
-      <input type="text" class="form-control" aria-label="..." value="Objetivo PNBV 1" readonly>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 1: Consolidar el Estado democrático y la construcción del poder popular." readonly>
     </div>
 
     <div class="input-group">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="..." value="objt2">
       </span>
-      <input type="text" class="form-control" aria-label="..." value="Objetivo PNBV 2" readonly>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 2: Auspiciar la igualdad, la cohesión, la inclusión y la equidad social y territorial, en la diversidad." readonly>
     </div>
 
     <div class="input-group">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="..." value="objt3">
       </span>
-      <input type="text" class="form-control" aria-label="..." value="Objetivo PNBV 3" readonly>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 3: Mejorar la calidad de vida de la población." readonly>
     </div>
 
     <div class="input-group">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="..." value="objt4">
       </span>
-      <input type="text" class="form-control" aria-label="..." value="Objetivo PNBV 4" readonly>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 4: Fortalecer las capacidades y potencialidades de la ciudadanía." readonly>
     </div>
 
     <div class="input-group">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="..." value="objt5">
       </span>
-      <input type="text" class="form-control" aria-label="..." value="Objetivo PNBV 5" readonly>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 5: Construir espacios de encuentro común y fortalecer la identidad nacional, las identidades diversas, la plurinacionalidad y la interculturalidad." readonly>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt6">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 6: Consolidar la transformación de la justicia y fortalecer la seguridad integral, en estricto respeto a los derechos humanos." readonly>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt7">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 7: Garantizar los derechos de la naturaleza y promover la sostenibilidad ambiental territorial y global." readonly>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt8">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 8: Consolidar el sistema económico social y solidario, de forma sostenible." readonly>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt9">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 9: Garantizar el trabajo digno en todas sus formas." readonly>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt10">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 10: Impulsar la transformación de la matriz productiva." readonly>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt11">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 11: Asegurar la soberanía y eficiencia de los sectores estratégicos para la transformación industrial y tecnológica." readonly>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="..." value="objt12">
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="Objetivo 12: Garantizar la soberanía y la paz, profundizar la inserción estratégica en el mundo y la integración latinoamericana." readonly>
     </div>
 
 	  </div>
@@ -83,7 +129,9 @@
            <th>Fórmula</th>
            <th>Meta</th>
        </tr>
-       <td colspan="3">Objetivo Específico</td>
+       <td colspan="3">
+           <input type="text" class="form-control " aria-label="..." value="Objetivo Específico." readonly>
+       </td>
        <tr >
            <td><input type="text" class="form-control"></td>
            <td><input type="text" class="form-control"></td>

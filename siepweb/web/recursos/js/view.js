@@ -1,4 +1,10 @@
 $(document).ready(function() {
+//    var nxjen = 0;
+//    $("input[class=specificObjs]").on("click", ".specificObjs", function () {
+//        $("#feedback").html("select" + nxjen);
+//        nxjen++;
+////        alert('Has hecho click ');
+//    });
     
     $("#opS1").click(function (){
         $('#feedback').show();

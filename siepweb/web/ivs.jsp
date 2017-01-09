@@ -15,6 +15,7 @@
   <style>
 body{
   background-color: rgb(234,234,236);
+  /*background: url('recursos/images/fondo.png');*/
 }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {

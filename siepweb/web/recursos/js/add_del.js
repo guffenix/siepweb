@@ -1,26 +1,44 @@
 $(document).ready(function() {
     var iCnt = 0;
     var matInptAdd = [];
+    var matObjAdd = [];
     var container = $(document.createElement('div'));
-    var container2 = $(document.createElement('table'));
+    //var container2 = $(document.createElement('table'));
     
+//    $("input[id ^= 'tb']").on('change', function() {
+//        alert($("input[id ^= 'tb']").val());
+//    });
+    $(".specificObjs").keypress(function(){
+        $("#tbObj"+$(this).attr("id")).html($("#tb1").val());
+    });
 
-    $("#muestraT").click(function(){
+    $("#objtModules").click(function(){
         $.each(matInptAdd, function( index, value ) {
             //aquí ingregar la función para guardado en la DB
-            $("#result3").append( $("#"+value).val() +"\n");
+            var newIndex = index+1;
+            
+            if ($("#"+value).val() !== ""){
+                $("#titleObj"+newIndex).val($("#"+value).val());
+                $("#result3").append("<pre>"+index+" - " +$("#"+value).val() +"</pre>");
+            }
+            
         });
+//        var option = '';
+//        for (var i=0;i<matObjAdd.length;i++){
+//           option += '<option value="'+ matObjAdd[i] + '">' + matObjAdd[i] + '</option>';
+//        }
+//        $('#main').append(option);
     });
     $('#addInput').click(function () {
         if (iCnt < 5) {
             iCnt = iCnt + 1;
-            $(container2).attr('class', 'table table-hover');
-            $(container).append('<input type=text class="form-control" aria-label="..." placeholder="Objetivo específico '+ iCnt +'" id=tb' + iCnt + ' />');
+//            $(container2).attr('class', 'table table-hover');
+            $(container).append('<input type=text class="form-control specificObjs" title="Por favor ingrese un objetivo." aria-label="..." placeholder="Objetivo específico '+ iCnt +'" id=tb' + iCnt + ' required />');
 //            $(container2).append('<tr id="tbObj' + iCnt+'"><td colspan="3" >Objetivo Específico '+iCnt+' </td></tr>'+
-            $("#ind_result").append('<tr id="tbObj' + iCnt+'"><td colspan="3" >Objetivo Específico '+iCnt+' </td></tr>'+
-	    '<tr><td><input type="text" class="form-control" id="objInd' + iCnt+'" ></td>'+
-	    '<td><input type="text" class="form-control" id="objtAim' + iCnt+'" ></td>'+
-	    '<td><input type="text" class="form-control" id="objtMeta' + iCnt+'" ></td>'+'</tr>');
+            $("#ind_result").append('<tr id="tbObj' + iCnt+'"><td colspan="3" ><input id="titleObj'+iCnt+'" type="text" class="form-control" aria-label="..." value="Objetivo Específico '+iCnt+'." readonly> </td></tr>'+
+	    '<tr><td><input type="text" class="form-control" id="objInd' + iCnt+'" required /></td>'+
+	    '<td><input type="text" class="form-control" id="objtAim' + iCnt+'" required /></td>'+
+	    '<td><input type="text" class="form-control" id="objtMeta' + iCnt+'" required /></td>'+'</tr>');
 
             matInptAdd.push('tb' + iCnt);
             

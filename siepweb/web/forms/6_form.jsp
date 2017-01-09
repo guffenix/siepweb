@@ -24,7 +24,7 @@
 
 
      <p><b>6.2.1. Modelo de Gestión:</b></p>
-     <button type="button" class="btn btn-success greenDarkColor">
+     <button type="button" class="btn btn-default greenDarkColor">
      Descargar Formato PDF
      </button>
     <label class="btn btn-default btn-file">
