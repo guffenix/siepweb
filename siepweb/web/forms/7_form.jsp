@@ -2,7 +2,7 @@
 
   <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>ESTRATEGIA DE SEGUIMIENTO Y EVALUACIÓN </b></p>
- <form>
+ <form id="objFrm7" method="post">
   <div class="form-group" id="namePro">
     <label for="nameProject">7.1. Monitoreo de la Ejecución:</label>
     <input type="text" class="form-control" id="nameProject">

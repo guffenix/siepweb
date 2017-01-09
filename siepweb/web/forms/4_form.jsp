@@ -2,7 +2,7 @@
 
   <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>VIABILIDAD Y PLAN DE SOSTENIBILIDAD </b></p>
- <form>
+ <form id="objFrm4" method="post">
   <p><b>4.1. Viabilidad técnica:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">

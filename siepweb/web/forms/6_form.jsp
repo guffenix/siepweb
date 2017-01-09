@@ -2,7 +2,7 @@
 
   <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>MARCO TEORICO </b></p>
- <form>
+ <form id="objFrm6" method="post">
 
   <div class="form-group" id="namePro">
     <label for="nameProject">6.1 Marco legal del Proyecto:</label>

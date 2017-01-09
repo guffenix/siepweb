@@ -2,7 +2,7 @@
 
 <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>OBJETIVOS DEL PROYECTO</b></p>
- <form>
+ <form id="objFrm3" method="post">
  <p><b>3.1. Objetivo general y objetivos específicos:</b></p>
   <div class="panel panel-default">
     <div class="panel-body">

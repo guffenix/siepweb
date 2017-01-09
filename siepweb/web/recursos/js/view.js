@@ -1,10 +1,21 @@
 $(document).ready(function() {
-//    var nxjen = 0;
-//    $("input[class=specificObjs]").on("click", ".specificObjs", function () {
-//        $("#feedback").html("select" + nxjen);
-//        nxjen++;
-////        alert('Has hecho click ');
-//    });
+    $("#btnDelete").click(function(){
+        $("#resultDeleteFrm").html("");
+        $("#resultDeleteFrm").html("Resumen de Eliminación: ");
+        
+        for (var x = 1; x <=7; x++)
+        {
+            $('#objFrm'+x)[0].reset();
+            $("#resultDeleteFrm").append("<pre class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Formulario "+ x +" Eliminado Correctamente.</pre>");
+        }
+        
+//        $('#objFrm2')[0].reset();
+//        $('#objFrm3')[0].reset();
+//        $('#objFrm4')[0].reset();
+//        $('#objFrm5')[0].reset();
+//        $('#objFrm6')[0].reset();
+//        $('#objFrm7')[0].reset();
+    });
     
     $("#opS1").click(function (){
         $('#feedback').show();

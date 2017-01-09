@@ -2,7 +2,7 @@
 
 <p><span class="glyphicon glyphicon-list-alt"></span>
  <b>DIAGNÓSTICO Y PROBLEMA</b></p>
- <form>
+ <form id="objFrm2" method="post">
   <div class="form-group" id="namePro">
     <label for="n1">2.1. Descripción de la situación actual del área de intervención del proyecto:
  

@@ -13,7 +13,7 @@ $(document).ready(function() {
 //    });
 
     $("#objtModules").click(function(){
-        $("#resultSaveFrm").html("");
+        $("#resultSaveFrm").html("Resumen Informativo:");
         var failObj = 0;
         $.each(matInptAdd, function( index, value ) {
             //aquí ingregar la función para guardado en la DB
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 $("#resultSaveFrm").append("<pre>"+index+" - " +$("#"+value).val() +"</pre>");
                 $("#resultSaveFrm").append("<pre class='alert alert-success'> Objetivo Específico "+newIndex+" Agregado Correctamente." +"</pre>");
             }else{
-                $("#resultSaveFrm").append("<pre class='alert alert-danger'> Es necesario llenar el Objetivo Específico "+newIndex+" para continuar." +"</pre>");
+                $("#resultSaveFrm").append("<pre class='alert alert-danger'> <span class='glyphicon glyphicon-remove'></span>  Es necesario llenar el Objetivo Específico "+newIndex+" para continuar." +"</pre>");
                 failObj++;
             }
             
