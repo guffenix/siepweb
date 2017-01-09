@@ -8,21 +8,33 @@ $(document).ready(function() {
 //    $("input[id ^= 'tb']").on('change', function() {
 //        alert($("input[id ^= 'tb']").val());
 //    });
-    $(".specificObjs").keypress(function(){
-        $("#tbObj"+$(this).attr("id")).html($("#tb1").val());
-    });
+//    $(".specificObjs").keypress(function(){
+//        $("#tbObj"+$(this).attr("id")).html($("#tb1").val());
+//    });
 
     $("#objtModules").click(function(){
+        $("#resultSaveFrm").html("");
+        var failObj = 0;
         $.each(matInptAdd, function( index, value ) {
             //aquí ingregar la función para guardado en la DB
             var newIndex = index+1;
             
             if ($("#"+value).val() !== ""){
                 $("#titleObj"+newIndex).val($("#"+value).val());
-                $("#result3").append("<pre>"+index+" - " +$("#"+value).val() +"</pre>");
+                
+                $("#resultSaveFrm").append("<pre>"+index+" - " +$("#"+value).val() +"</pre>");
+                $("#resultSaveFrm").append("<pre class='alert alert-success'> Objetivo Específico "+newIndex+" Agregado Correctamente." +"</pre>");
+            }else{
+                $("#resultSaveFrm").append("<pre class='alert alert-danger'> Es necesario llenar el Objetivo Específico "+newIndex+" para continuar." +"</pre>");
+                failObj++;
             }
             
+            
+            
         });
+        if (failObj === 0){
+                $("#resultSaveFrm").append("<pre class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Objetivo(s) Específico(s) Guardados Correctamente." +"</pre>");
+            }
 //        var option = '';
 //        for (var i=0;i<matObjAdd.length;i++){
 //           option += '<option value="'+ matObjAdd[i] + '">' + matObjAdd[i] + '</option>';

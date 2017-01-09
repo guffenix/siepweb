@@ -25,7 +25,7 @@
               </div>
           </div>
           <div class="input-group" id="main">
-          <button type="button" class="btn btn-default greenDarkColor" id="objtModules" value="Agregar Objetivos y Módulos">
+          <button type="button" class="btn btn-default greenDarkColor" id="objtModules" value="" data-toggle="modal" data-target="#alertSave">
               Agregar Objetivos y Módulos
           </button>
           </div>
