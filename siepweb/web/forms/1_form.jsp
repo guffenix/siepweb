@@ -135,7 +135,11 @@
                         <td><input type="date" placeholder="dd/mm/aaaa" class="form-control" id="filingDate"></td>
                         <td><input type="date" placeholder="dd/mm/aaaa" class="form-control" id="startDate"></td>
                         <td><input type="date" placeholder="dd/mm/aaaa" class="form-control" id="finishDate"></td>
-                        <td><input type="number" min="1" class="form-control" id="durat"></td>
+                        <td>
+                            <input type="number" min="1" class="form-control" id="durat">
+                            <button id="numberMonth" type="button" class="btn btn-success btn-sm">
+          <span class="glyphicon glyphicon-remove-sign"></span> Asignar Meses</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

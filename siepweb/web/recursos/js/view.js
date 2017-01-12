@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    
+    $("#numberMonth").click(function(){
+        $("#durat").val(callMonth($("#startDate").val(),$("#finishDate").val() ));
+
+    });
+    
     $("#btnDelete").click(function(){
         $("#resultDeleteFrm").html("");
         $("#resultDeleteFrm").html("Resumen de Eliminación: ");
@@ -9,12 +15,6 @@ $(document).ready(function() {
             $("#resultDeleteFrm").append("<pre class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Formulario "+ x +" Eliminado Correctamente.</pre>");
         }
         
-//        $('#objFrm2')[0].reset();
-//        $('#objFrm3')[0].reset();
-//        $('#objFrm4')[0].reset();
-//        $('#objFrm5')[0].reset();
-//        $('#objFrm6')[0].reset();
-//        $('#objFrm7')[0].reset();
     });
     
     $("#opS1").click(function (){
@@ -320,4 +320,12 @@ function numNotify(numberNotify){
     return "+99";
   }
    
+}
+
+function callMonth(date1, date2){
+    var dateO = date1.split("-");
+    var dateF = date2.split("-");
+    var numMonth = (dateF[0] - dateO[0])*12 + (dateF[1]-dateO[1]);
+    
+    return (numMonth);
 }
